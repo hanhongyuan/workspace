@@ -1,0 +1,32 @@
+1c1,29
+< * f9e4e33 [2018-07-28 21:50:41 +0800] -heyangya 修复未同步会员数据的问题   (HEAD, origin/hotfix_erp_member_failed) 
+---
+> *   5e9f5fa [2018-08-04 02:04:07 +0000] -曾智 Merge pull request #8 in MAR/erp_to_platform from dev to master * commit 'fb16d1c75fe9fabb189f8e9d0980a4b20de72243':
+> |\    修改:应产品和ERP的要求去掉手机号11位校验。
+> | |   修改:Integrallog，Integral项为负数的判断。远程dev分支未更新。
+> | |   (HEAD, origin/master) 
+> | * fb16d1c [2018-08-04 10:01:27 +0800] -xuxueyi 修改:应产品和ERP的要求去掉手机号11位校验。   (origin/dev) 
+> | * 842eff4 [2018-08-02 18:20:41 +0800] -xuxueyi 修改:Integrallog，Integral项为负数的判断。远程dev分支未更新。   
+> |/  
+> *   dba237b [2018-07-30 08:39:10 +0000] -徐学 Merge pull request #7 in MAR/erp_to_platform from dev to master * commit 'b7198787cb583df960794d478102edb24385f5aa':
+> |\    修复未同步会员数据的问题
+> | |   
+> | *   b719878 [2018-07-30 16:37:27 +0800] -xuxueyi 修改:Integrallog，Integral项为负数的判断。   
+> | |\  
+> |/ /  
+> | * f9e4e33 [2018-07-28 21:50:41 +0800] -heyangya 修复未同步会员数据的问题   (origin/hotfix_erp_member_failed) 
+> * |   9b84691 [2018-07-28 02:52:55 +0000] -曾智 Merge pull request #6 in MAR/erp_to_platform from dev to master * commit 'f04f4ea782b50ce854fb4c03e4fe36fcd4358494':
+> |\ \    修改:membergrade返回值未修改。
+> | | |   修改:erp操作流程调整，商户请求数据校验通过后直接rocketmq推送。业务库再入库。
+> | | |   修改:排除代码中的事务。v1
+> | | |   
+> | * | f04f4ea [2018-07-28 09:56:07 +0800] -xuxueyi 修改:membergrade返回值未修改。   
+> | * | 0c80f85 [2018-07-27 20:03:51 +0800] -xuxueyi 修改:erp操作流程调整，商户请求数据校验通过后直接rocketmq推送。业务库再入库。   
+> | * | 765dbf7 [2018-07-26 17:52:53 +0800] -xuxueyi 修改:排除代码中的事务。v1   
+> |/ /  
+> * |   4bbd9f9 [2018-07-26 09:30:49 +0000] -曾智 Merge pull request #4 in MAR/erp_to_platform from dev to master * commit '310a44322e8980fdf6cacbb03ea13257143bbd11':
+> |\ \    修改:排除代码中的事务。
+> | |/    
+> |/|   
+> | * 310a443 [2018-07-26 17:21:45 +0800] -xuxueyi 修改:排除代码中的事务。   
+> |/  

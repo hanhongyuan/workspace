@@ -1,0 +1,50 @@
+FROM microsoft/aspnetcore-build:2.0 AS build-env
+WORKDIR /app
+
+# copy csproj and restore as distinct layers
+COPY SJFX.Portal.sln ./
+RUN dotnet restore
+
+# copy everything else and build
+COPY . ./
+RUN dotnet restore SJFX.Portal.sln
+RUN dotnet publish -c Release -o out
+
+# build runtime image
+FROM microsoft/aspnetcore:2.0
+WORKDIR /app
+COPY --from=build-env /app/out .
+ENTRYPOINT ["dotnet", "TestWebApplication.dll"]
+
+
+md  publish\PC.Portal\
+md  publish\SJFX.SDK.Sms.Yuntongxun\
+md  publish\SJFX.Common.Services\
+md  publish\SJFX.Common.IServices\
+md  publish\SJFX.WeChat\
+md  publish\SJFX.SDK.Sms\
+md  publish\SJFX.WX.IServices\
+md  publish\SJFX.WX.Services\
+md publish\SJFX.WX.Infrastructure\
+md publish\SJFX.WX.Model\
+md publish\SJFX.WX.IRepository\
+
+xCOPY SJFX.Portal.sln publish\ 
+xCOPY PC.Portal\*.* publish\PC.Portal\ /S
+xCOPY SJFX.SDK.Sms.Yuntongxun\*.* publish\SJFX.SDK.Sms.Yuntongxun\ /S
+xCOPY SJFX.Common.Services\*.* publish\SJFX.Common.Services\ /S
+xCOPY SJFX.Common.IServices\*.* publish\SJFX.Common.IServices\ /S
+xCOPY SJFX.WeChat\*.* publish\SJFX.WeChat\ /S
+xCOPY SJFX.SDK.Sms\*.* publish\SJFX.SDK.Sms\ /S
+xCOPY SJFX.WX.IServices\*.* publish\SJFX.WX.IServices\ /S
+xCOPY SJFX.WX.Services\*.* publish\SJFX.WX.Services\ /S
+xCOPY SJFX.WX.Infrastructure\*.* publish\SJFX.WX.Infrastructure\ /S
+xCOPY SJFX.WX.Model\*.* publish\SJFX.WX.Model\ /S
+xCOPY SJFX.WX.IRepository\*.* publish\SJFX.WX.IRepository\ /S
+xCOPY SJFX.WX.Repository.Dapper\*.* publish\SJFX.WX.Repository.Dapper\ /S
+xCOPY UEditorNetCore\*.* publish\UEditorNetCore\ /S
+xCOPY SJFX.WX.Model.ApiEntity\*.* publish\SJFX.WX.Model.ApiEntity\ /S
+dotnet publish -c Release -o publish
+
+
+dotnet restore

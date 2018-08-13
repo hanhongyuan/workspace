@@ -1,0 +1,136 @@
+1,2c1,3
+< *   aa67935 [2018-08-04 02:51:12 +0000] -贺阳亚 Merge pull request #13 in MAR/coupon from dev to master * commit '8c56d91b2b4ab37f5d314972d2b8c3b0087e85d3':
+< |\    去掉增值券添加模板（增值不需要添加模板） 修改上面错误引发的错误，
+---
+> *   91db043 [2018-08-06 05:19:52 +0000] -刘裕 Merge pull request #19 in MAR/coupon from test to master * commit '013d98c74499e75f57c21725f0e82065081902da':
+> |\    修改备注显示错误问题
+> | |   去掉增值券添加模板（增值不需要添加模板）
+4,11c5,9
+< | *   8c56d91 [2018-08-04 02:49:48 +0000] -刘裕 Merge pull request #12 in MAR/coupon from hotfix to dev * commit 'd42cf95a8c252db19deb5b5a7321e539a724102e':
+< | |\    去掉增值券添加模板（增值不需要添加模板） 修改上面错误引发的错误，
+< | | |   (origin/dev) 
+< | | * d42cf95 [2018-08-04 10:36:14 +0800] -liuyu 去掉增值券添加模板（增值不需要添加模板） 修改上面错误引发的错误，   (origin/hotfix) 
+< * | |   4d4f9af [2018-08-04 02:20:34 +0000] -刘裕 Merge pull request #11 in MAR/coupon from dev to master * commit 'b4bd457287689cb1fdf7ffc118805a8aa0da45c5':
+< |\ \ \    去掉增值券添加模板（增值不需要添加模板）
+< | |/ /    
+< | * |   b4bd457 [2018-08-04 02:20:01 +0000] -刘裕 Merge pull request #10 in MAR/coupon from hotfix to dev * commit '16e674d1bfd48fe52fddc4326247f9eb47fc6eef':
+---
+> | *   013d98c [2018-08-06 05:19:34 +0000] -刘裕 Merge pull request #18 in MAR/coupon from dev to test * commit '252fc83c33d9a35a0379db5a76f2293bdb58b4d1':
+> | |\    修改备注显示错误问题
+> | | |   (origin/test) 
+> | | * 252fc83 [2018-08-06 13:17:34 +0800] -liuyu 修改备注显示错误问题   (origin/dev) 
+> | * |   fd7b542 [2018-08-06 05:14:32 +0000] -刘裕 Merge pull request #17 in MAR/coupon from dev to test * commit 'f6854aeb32139c57c43b0468ee79fcf2591a0cc7':
+14,23c12,14
+< | | * 16e674d [2018-08-04 10:18:59 +0800] -liuyu 去掉增值券添加模板（增值不需要添加模板）   
+< * | |   d44c7eb [2018-08-03 10:08:55 +0000] -刘裕 Merge pull request #9 in MAR/coupon from dev to master * commit '8d926e10dff4049c7402e64814ebffc193bddf10':
+< |\ \ \    修改券集市投放数量为0修改时剩余数量为负数
+< | |/ /    
+< | * |   8d926e1 [2018-08-03 10:08:44 +0000] -刘裕 Merge pull request #8 in MAR/coupon from hotfix to dev * commit '4be0a92b71879cdb7cc6338625a22399780958d4':
+< | |\ \    修改券集市投放数量为0修改时剩余数量为负数
+< | | |/    
+< | | * 4be0a92 [2018-08-03 17:58:34 +0800] -liuyu 修改券集市投放数量为0修改时剩余数量为负数   
+< * | |   c217ffa [2018-07-30 09:46:19 +0000] -贺阳亚 Merge pull request #7 in MAR/coupon from dev to master * commit '3c1d35fb9b4330eca2b77e07fc75faf5938b9bdb':
+< |\ \ \    转增好友领取时，限制如果时领券中心来的判断限领数量
+---
+> | | * f6854ae [2018-08-06 13:13:13 +0800] -liuyu 去掉增值券添加模板（增值不需要添加模板）   
+> * | |   4d33d3c [2018-08-06 05:06:59 +0000] -刘裕 Merge pull request #16 in MAR/coupon from test to master * commit '8a89c3054a739d342257b032446777e62aed03a1':
+> |\ \ \    已领取礼券修改券模板显示时显示的改之后的数据
+25,26c16,17
+< | * |   3c1d35f [2018-07-30 09:43:54 +0000] -刘裕 Merge pull request #6 in MAR/coupon from hotfix to dev * commit '8f855657700ef90a51bddb1f69cb55facc7ea92a':
+< | |\ \    转增好友领取时，限制如果时领券中心来的判断限领数量
+---
+> | * |   8a89c30 [2018-08-06 05:06:13 +0000] -刘裕 Merge pull request #15 in MAR/coupon from dev to test * commit 'a07cf6c2f4c50316cf69bcbed39c1e6dfe7e276e':
+> | |\ \    已领取礼券修改券模板显示时显示的改之后的数据
+28,41c19
+< | | * 8f85565 [2018-07-30 17:35:14 +0800] -liuyu 转增好友领取时，限制如果时领券中心来的判断限领数量   
+< * | |   ec489ba [2018-07-30 07:43:31 +0000] -曾智 Merge pull request #5 in MAR/coupon from dev to master * commit '1bc192583f9c1c1d291f5619ebc563ce2c7765af':
+< |\ \ \    已拥有礼券人做条件，满足才能转赠
+< | |/ /    转增bug（可一直转增，一直忘表里假数据）
+< | | |     转增bug（可一直转增，一直忘表里假数据）
+< | | |     
+< | * |   1bc1925 [2018-07-30 06:38:22 +0000] -刘裕 Merge pull request #4 in MAR/coupon from hotfix to dev * commit '9783a1730475938d2f2ba74a4628a1d699793d2a':
+< | |\ \    已拥有礼券人做条件，满足才能转赠
+< | | |/    转增bug（可一直转增，一直忘表里假数据）
+< | | |     转增bug（可一直转增，一直忘表里假数据）
+< | | |     
+< | | * 9783a17 [2018-07-30 11:48:54 +0800] -liuyu 已拥有礼券人做条件，满足才能转赠   
+< | | * 80470c6 [2018-07-30 11:43:12 +0800] -liuyu 转增bug（可一直转增，一直忘表里假数据）   
+< | | *   23e9bb5 [2018-07-30 11:37:48 +0800] -liuyu Merge branches 'hotfix' and 'master' of http://bit.sjfx.com.cn/scm/mar/coupon into hotfix   
+---
+> | | *   a07cf6c [2018-08-06 13:05:19 +0800] -liuyu Merge remote-tracking branch 'origin/dev' into dev   
+43,53c21,33
+< | |_|/  
+< |/| |   
+< * | |   1a74f60 [2018-07-30 03:15:37 +0000] -曾智 Merge pull request #3 in MAR/coupon from dev to master * commit '4733e62b9c8d4cba8b2ee6b075f09c30ef1f7c03':
+< |\ \ \    转增bug（可一直转增，一直忘表里假数据）
+< | |/ /    去掉旧账户接口
+< | | |     修改礼券转增bug
+< | | |     赠券添加限制
+< | | |     转赠时没有控制转赠表记录
+< | | |     
+< | * |   4733e62 [2018-07-30 03:10:54 +0000] -刘裕 Merge pull request #2 in MAR/coupon from hotfix to dev * commit 'b513ecd3277b154f8ea3c80c4ed1eeb211dcf5c4':
+< | |\ \    转增bug（可一直转增，一直忘表里假数据）
+---
+> | | * | c6a698b [2018-08-06 13:05:04 +0800] -liuyu 已领取礼券修改券模板显示时显示的改之后的数据   
+> * | | |   b942667 [2018-08-04 08:41:49 +0000] -曾智 Merge pull request #14 in MAR/coupon from zengzhi/buildgradle-1533372131936 to master * commit '7c365cca2a75ce265d172078e6ee5baa429b1d95':
+> |\ \ \ \    build.gradle edited online with Bitbucket
+> | |/ / /    
+> |/| | |   
+> | * | | 7c365cc [2018-08-04 08:41:41 +0000] -曾智 build.gradle edited online with Bitbucket   
+> |/ / /  
+> * | |   aa67935 [2018-08-04 02:51:12 +0000] -贺阳亚 Merge pull request #13 in MAR/coupon from dev to master * commit '8c56d91b2b4ab37f5d314972d2b8c3b0087e85d3':
+> |\ \ \    去掉增值券添加模板（增值不需要添加模板） 修改上面错误引发的错误，
+> | | |/    
+> | |/|   
+> | * |   8c56d91 [2018-08-04 02:49:48 +0000] -刘裕 Merge pull request #12 in MAR/coupon from hotfix to dev * commit 'd42cf95a8c252db19deb5b5a7321e539a724102e':
+> | |\ \    去掉增值券添加模板（增值不需要添加模板） 修改上面错误引发的错误，
+54a35,83
+> | | * | d42cf95 [2018-08-04 10:36:14 +0800] -liuyu 去掉增值券添加模板（增值不需要添加模板） 修改上面错误引发的错误，   (origin/hotfix) 
+> * | | |   4d4f9af [2018-08-04 02:20:34 +0000] -刘裕 Merge pull request #11 in MAR/coupon from dev to master * commit 'b4bd457287689cb1fdf7ffc118805a8aa0da45c5':
+> |\ \ \ \    去掉增值券添加模板（增值不需要添加模板）
+> | |/ / /    
+> | * | |   b4bd457 [2018-08-04 02:20:01 +0000] -刘裕 Merge pull request #10 in MAR/coupon from hotfix to dev * commit '16e674d1bfd48fe52fddc4326247f9eb47fc6eef':
+> | |\ \ \    去掉增值券添加模板（增值不需要添加模板）
+> | | |/ /    
+> | | * | 16e674d [2018-08-04 10:18:59 +0800] -liuyu 去掉增值券添加模板（增值不需要添加模板）   
+> * | | |   d44c7eb [2018-08-03 10:08:55 +0000] -刘裕 Merge pull request #9 in MAR/coupon from dev to master * commit '8d926e10dff4049c7402e64814ebffc193bddf10':
+> |\ \ \ \    修改券集市投放数量为0修改时剩余数量为负数
+> | |/ / /    
+> | * | |   8d926e1 [2018-08-03 10:08:44 +0000] -刘裕 Merge pull request #8 in MAR/coupon from hotfix to dev * commit '4be0a92b71879cdb7cc6338625a22399780958d4':
+> | |\ \ \    修改券集市投放数量为0修改时剩余数量为负数
+> | | |/ /    
+> | | * | 4be0a92 [2018-08-03 17:58:34 +0800] -liuyu 修改券集市投放数量为0修改时剩余数量为负数   
+> * | | |   c217ffa [2018-07-30 09:46:19 +0000] -贺阳亚 Merge pull request #7 in MAR/coupon from dev to master * commit '3c1d35fb9b4330eca2b77e07fc75faf5938b9bdb':
+> |\ \ \ \    转增好友领取时，限制如果时领券中心来的判断限领数量
+> | |/ / /    
+> | * | |   3c1d35f [2018-07-30 09:43:54 +0000] -刘裕 Merge pull request #6 in MAR/coupon from hotfix to dev * commit '8f855657700ef90a51bddb1f69cb55facc7ea92a':
+> | |\ \ \    转增好友领取时，限制如果时领券中心来的判断限领数量
+> | | |/ /    
+> | | * | 8f85565 [2018-07-30 17:35:14 +0800] -liuyu 转增好友领取时，限制如果时领券中心来的判断限领数量   
+> * | | |   ec489ba [2018-07-30 07:43:31 +0000] -曾智 Merge pull request #5 in MAR/coupon from dev to master * commit '1bc192583f9c1c1d291f5619ebc563ce2c7765af':
+> |\ \ \ \    已拥有礼券人做条件，满足才能转赠
+> | |/ / /    转增bug（可一直转增，一直忘表里假数据）
+> | | | |     转增bug（可一直转增，一直忘表里假数据）
+> | | | |     
+> | * | |   1bc1925 [2018-07-30 06:38:22 +0000] -刘裕 Merge pull request #4 in MAR/coupon from hotfix to dev * commit '9783a1730475938d2f2ba74a4628a1d699793d2a':
+> | |\ \ \    已拥有礼券人做条件，满足才能转赠
+> | | |/ /    转增bug（可一直转增，一直忘表里假数据）
+> | | | |     转增bug（可一直转增，一直忘表里假数据）
+> | | | |     
+> | | * | 9783a17 [2018-07-30 11:48:54 +0800] -liuyu 已拥有礼券人做条件，满足才能转赠   
+> | | * | 80470c6 [2018-07-30 11:43:12 +0800] -liuyu 转增bug（可一直转增，一直忘表里假数据）   
+> | | * |   23e9bb5 [2018-07-30 11:37:48 +0800] -liuyu Merge branches 'hotfix' and 'master' of http://bit.sjfx.com.cn/scm/mar/coupon into hotfix   
+> | | |\ \  
+> | |_|/ /  
+> |/| | |   
+> * | | |   1a74f60 [2018-07-30 03:15:37 +0000] -曾智 Merge pull request #3 in MAR/coupon from dev to master * commit '4733e62b9c8d4cba8b2ee6b075f09c30ef1f7c03':
+> |\ \ \ \    转增bug（可一直转增，一直忘表里假数据）
+> | |/ / /    去掉旧账户接口
+> | | | |     修改礼券转增bug
+> | | | |     赠券添加限制
+> | | | |     转赠时没有控制转赠表记录
+> | | | |     
+> | * | |   4733e62 [2018-07-30 03:10:54 +0000] -刘裕 Merge pull request #2 in MAR/coupon from hotfix to dev * commit 'b513ecd3277b154f8ea3c80c4ed1eeb211dcf5c4':
+> | |\ \ \    转增bug（可一直转增，一直忘表里假数据）
+> | | |_|/    
+> | |/| |   

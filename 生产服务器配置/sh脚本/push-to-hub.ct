@@ -1,0 +1,91 @@
+cat > push-to-hub.sh << EOF
+#!/bin/sh
+localhub=192.168.1.12:5000
+awayhub=dockerhub.sjfx.com.cn
+appname=\$1
+tag=\$2
+docker pull \$localhub/sjfx/\$appname:\$tag
+docker login dockerhub.sjfx.com.cn -u sjfxdev -p Sjfx@2018
+docker tag \$localhub/sjfx/\$appname:\$tag \$awayhub/sjfx/\$appname:\$tag
+docker push \$awayhub/sjfx/\$appname:\$tag
+docker logout dockerhub.sjfx.com.cn
+docker rmi \$localhub/sjfx/\$appname:\$tag
+docker rmi \$awayhub/sjfx/\$appname:\$tag
+EOF
+
+
+cat > push-and-run.sh << EOF
+#!/bin/sh
+localhub=192.168.1.12:5000
+awayhub=dockerhub.sjfx.com.cn
+appname=\$1
+tag=\$2
+httpport=\$3
+tcpport=\$4
+memsize=\$5
+
+docker pull \$localhub/sjfx/\$appname:\$tag
+docker login dockerhub.sjfx.com.cn -u sjfxdev -p Sjfx@2018
+docker tag \$localhub/sjfx/\$appname:\$tag \$awayhub/sjfx/\$appname:\$tag
+docker push \$awayhub/sjfx/\$appname:\$tag
+docker logout dockerhub.sjfx.com.cn
+docker rmi \$localhub/sjfx/\$appname:\$tag
+docker rmi \$awayhub/sjfx/\$appname:\$tag
+
+ssh 47.99.32.21 "sh /root/deploy-app-veri.sh \$appname \$tag \$httpport \$tcpport \$memsize"
+EOF
+
+
+cat > push-and-run-prod.sh << EOF
+#!/bin/sh
+localhub=192.168.1.12:5000
+awayhub=dockerhub.sjfx.com.cn
+appname=\$1
+tag=\$2
+httpport=\$3
+tcpport=\$4
+memsize=\$5
+
+docker pull \$localhub/sjfx/\$appname:\$tag
+docker login dockerhub.sjfx.com.cn -u sjfxdev -p Sjfx@2018
+docker tag \$localhub/sjfx/\$appname:\$tag \$awayhub/sjfx/\$appname:\$tag
+docker push \$awayhub/sjfx/\$appname:\$tag
+docker logout dockerhub.sjfx.com.cn
+docker rmi \$localhub/sjfx/\$appname:\$tag
+docker rmi \$awayhub/sjfx/\$appname:\$tag
+
+ssh 116.62.226.170 "sh /root/deploy-app-prod-single.sh \$appname \$tag \$httpport \$tcpport \$memsize"
+EOF
+
+
+
+cat > push-dev-and-run-prod.sh << EOF
+#!/bin/sh
+awayhub=47.99.32.21
+appname=\$1
+tag=\$2
+httpport=\$3
+tcpport=\$4
+memsize=\$5
+
+docker login 47.99.32.21 -u sjfxdev -p Sjfx@2018
+docker tag sjfx/\$appname:\$tag \$awayhub/sjfx/\$appname:\$tag
+docker push \$awayhub/sjfx/\$appname:\$tag
+docker logout  47.99.32.21
+docker rmi \$awayhub/sjfx/\$appname:\$tag
+
+ssh 116.62.226.170 "sh /root/deploy-app-prod-single.sh \$appname \$tag \$httpport \$tcpport \$memsize"
+EOF
+
+
+cat > push-local-to-hub.sh << EOF
+#!/bin/sh push-local-to-hub.sh
+project_name=\$1
+tag=\$2
+hubhost=47.99.32.21
+docker login \$hubhost -u sjfxdev -p Sjfx@2018
+docker tag sjfx/\$project_name:\$tag \$hubhost/sjfx/\$project_name:\$tag
+docker push \$hubhost/sjfx/\$project_name:\$tag
+docker logout  \$hubhost
+docker rmi \$hubhost/sjfx/\$project_name:\$tag
+EOF

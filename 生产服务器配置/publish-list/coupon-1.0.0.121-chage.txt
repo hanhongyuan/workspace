@@ -1,0 +1,84 @@
+1c1,81
+< * a9beba5 [2018-07-15 19:57:55 +0800] -heyangya 修改配置   (HEAD, origin/master) 
+---
+> *   d44c7eb [2018-08-03 10:08:55 +0000] -刘裕 Merge pull request #9 in MAR/coupon from dev to master * commit '8d926e10dff4049c7402e64814ebffc193bddf10':
+> |\    修改券集市投放数量为0修改时剩余数量为负数
+> | |   (HEAD, origin/master) 
+> | *   8d926e1 [2018-08-03 10:08:44 +0000] -刘裕 Merge pull request #8 in MAR/coupon from hotfix to dev * commit '4be0a92b71879cdb7cc6338625a22399780958d4':
+> | |\    修改券集市投放数量为0修改时剩余数量为负数
+> | | |   (origin/dev) 
+> | | * 4be0a92 [2018-08-03 17:58:34 +0800] -liuyu 修改券集市投放数量为0修改时剩余数量为负数   (origin/hotfix) 
+> * | |   c217ffa [2018-07-30 09:46:19 +0000] -贺阳亚 Merge pull request #7 in MAR/coupon from dev to master * commit '3c1d35fb9b4330eca2b77e07fc75faf5938b9bdb':
+> |\ \ \    转增好友领取时，限制如果时领券中心来的判断限领数量
+> | |/ /    
+> | * |   3c1d35f [2018-07-30 09:43:54 +0000] -刘裕 Merge pull request #6 in MAR/coupon from hotfix to dev * commit '8f855657700ef90a51bddb1f69cb55facc7ea92a':
+> | |\ \    转增好友领取时，限制如果时领券中心来的判断限领数量
+> | | |/    
+> | | * 8f85565 [2018-07-30 17:35:14 +0800] -liuyu 转增好友领取时，限制如果时领券中心来的判断限领数量   
+> * | |   ec489ba [2018-07-30 07:43:31 +0000] -曾智 Merge pull request #5 in MAR/coupon from dev to master * commit '1bc192583f9c1c1d291f5619ebc563ce2c7765af':
+> |\ \ \    已拥有礼券人做条件，满足才能转赠
+> | |/ /    转增bug（可一直转增，一直忘表里假数据）
+> | | |     转增bug（可一直转增，一直忘表里假数据）
+> | | |     
+> | * |   1bc1925 [2018-07-30 06:38:22 +0000] -刘裕 Merge pull request #4 in MAR/coupon from hotfix to dev * commit '9783a1730475938d2f2ba74a4628a1d699793d2a':
+> | |\ \    已拥有礼券人做条件，满足才能转赠
+> | | |/    转增bug（可一直转增，一直忘表里假数据）
+> | | |     转增bug（可一直转增，一直忘表里假数据）
+> | | |     
+> | | * 9783a17 [2018-07-30 11:48:54 +0800] -liuyu 已拥有礼券人做条件，满足才能转赠   
+> | | * 80470c6 [2018-07-30 11:43:12 +0800] -liuyu 转增bug（可一直转增，一直忘表里假数据）   
+> | | *   23e9bb5 [2018-07-30 11:37:48 +0800] -liuyu Merge branches 'hotfix' and 'master' of http://bit.sjfx.com.cn/scm/mar/coupon into hotfix   
+> | | |\  
+> | |_|/  
+> |/| |   
+> * | |   1a74f60 [2018-07-30 03:15:37 +0000] -曾智 Merge pull request #3 in MAR/coupon from dev to master * commit '4733e62b9c8d4cba8b2ee6b075f09c30ef1f7c03':
+> |\ \ \    转增bug（可一直转增，一直忘表里假数据）
+> | |/ /    去掉旧账户接口
+> | | |     修改礼券转增bug
+> | | |     赠券添加限制
+> | | |     转赠时没有控制转赠表记录
+> | | |     
+> | * |   4733e62 [2018-07-30 03:10:54 +0000] -刘裕 Merge pull request #2 in MAR/coupon from hotfix to dev * commit 'b513ecd3277b154f8ea3c80c4ed1eeb211dcf5c4':
+> | |\ \    转增bug（可一直转增，一直忘表里假数据）
+> | | | |   
+> | | | * 3621007 [2018-07-30 11:22:20 +0800] -liuyu 转增bug（可一直转增，一直忘表里假数据）   
+> | | |/  
+> | | * b513ecd [2018-07-30 10:52:23 +0800] -liuyu 转增bug（可一直转增，一直忘表里假数据）   
+> | |/  
+> | * d0daa2e [2018-07-28 17:51:20 +0800] -liuyu 去掉旧账户接口   
+> | * 4333de1 [2018-07-28 17:48:59 +0800] -liuyu 修改礼券转增bug   
+> | *   c001296 [2018-07-28 17:37:35 +0800] -liuyu 解决master和dev分支冲突   
+> | |\  
+> | |/  
+> |/|   
+> * |   b731d48 [2018-07-26 08:13:01 +0000] -曾智 Merge pull request #1 in MAR/coupon from dev to master * commit 'cb27064301c9d395b785ab2de33da7d30075e59b':
+> |\ \    修改h5link未添加问题，(券添加就直接上架没有触发上架事件)
+> | | |   消息退了关闭
+> | | |   fix file encoding
+> | | |   
+> * \ \   59c4b99 [2018-07-20 09:19:36 +0800] -liuyu Merge remote-tracking branch 'origin/master'   
+> |\ \ \  
+> * | | | 7b42f98 [2018-07-20 09:19:14 +0800] -liuyu 赠券添加限制   
+> | | | * 3e634a4 [2018-07-28 17:30:31 +0800] -liuyu 赠券添加限制   
+> | | | * 7792353 [2018-07-28 17:30:23 +0800] -liuyu 转赠时没有控制转赠表记录   
+> | | |/  
+> | | * cb27064 [2018-07-26 16:05:54 +0800] -liuyu 修改h5link未添加问题，(券添加就直接上架没有触发上架事件)   
+> | | *   9a47e98 [2018-07-24 11:09:04 +0800] -liuyu Merge remote-tracking branch 'origin/dev' into dev   
+> | | |\  
+> | | | * 4fdd6dc [2018-07-20 20:50:17 +0800] -heyangya fix file encoding   
+> | | |/  
+> | |/|   
+> | | * c4f06f8 [2018-07-24 11:08:22 +0800] -liuyu 消息退了关闭   
+> | |/  
+> | * a25ea2e [2018-07-19 20:00:13 +0800] -heyangya 修改配置   
+> | *   c18d16b [2018-07-19 19:54:30 +0800] -heyangya Merge branch 'master' of http://bit.sjfx.com.cn/scm/coup/coupon # Conflicts:
+> | |\  #	.idea/workspace.xml
+> | |/    
+> |/|   
+> * | a634f44 [2018-07-19 16:17:07 +0800] -liuyu 添加礼券模板领取方式   
+> * | 90314de [2018-07-19 15:35:55 +0800] -liuyu 添加礼券模板领取方式   
+> * | c9673e9 [2018-07-18 17:37:07 +0800] -liuyu 脚本添加   
+> * | 4269a46 [2018-07-18 10:06:54 +0800] -liuyu 添加礼券模板领取方式   
+> | * f3e1a28 [2018-07-19 19:54:20 +0800] -heyangya save   
+> |/  
+> * a9beba5 [2018-07-15 19:57:55 +0800] -heyangya 修改配置   

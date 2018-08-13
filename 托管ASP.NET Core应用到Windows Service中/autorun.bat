@@ -1,0 +1,1 @@
+powershell C:\run\run.ps1 -Services 'W3SVC' -Sites 'Default Web Site,GraphiQLTest'

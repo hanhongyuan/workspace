@@ -1,0 +1,141 @@
+1,5c1,15
+< * f3b4b16 [2018-07-16 11:23:38 +0800] -heyangya fixbug   (HEAD, origin/master) 
+< * 46a03bc [2018-07-15 17:17:45 +0800] -heyangya 修改配置   
+< *   f3ebdc9 [2018-07-14 17:57:04 +0800] -heyangya Merge remote-tracking branch 'origin/master'   
+< |\  
+< | *   3a20abe [2018-07-14 16:09:53 +0800] -ZhangJiaMing Merge remote-tracking branch 'origin/master'   
+---
+> *   d4cea64 [2018-08-03 04:01:51 +0000] -贺阳亚 Merge pull request #9 in MAR/account from dev to master * commit 'fd3c5b1c7f60558a9d3ce993f32de2e44baec3b9':
+> |\    线下积分上传时,积分账户可以为负数3
+> | |   线下积分上传时,积分账户可以为负数2
+> | |   线下积分上传时,积分账户可以为负数
+> | |   (HEAD, origin/master) 
+> | * fd3c5b1 [2018-08-03 11:00:07 +0800] -heyangya 线下积分上传时,积分账户可以为负数3   (origin/dev) 
+> | * b52a58e [2018-08-03 10:56:21 +0800] -heyangya 线下积分上传时,积分账户可以为负数2   
+> | * 9239fa8 [2018-08-03 10:20:59 +0800] -heyangya 线下积分上传时,积分账户可以为负数   
+> * |   f5c7da9 [2018-08-03 01:44:07 +0000] -贺阳亚 Merge pull request #8 in MAR/account from dev to master * commit '456504cf60a161b4840e65eb1d4593d09cc351e4':
+> |\ \    增加erp积分重复校验
+> | |/    修改配置
+> | |     追加sql后缀
+> | |     移除测试代码
+> | |     
+> | *   456504c [2018-08-03 09:43:00 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+7c17,122
+< | * | 50a792f [2018-07-14 16:09:47 +0800] -ZhangJiaMing 添加账户类型字段   
+---
+> | | * 444bcbe [2018-08-02 10:48:48 +0800] -autumn 修改配置   
+> | | * 5d2efae [2018-07-27 15:48:09 +0800] -autumn 追加sql后缀   
+> | | * fa932c0 [2018-07-27 15:47:40 +0800] -autumn 移除测试代码   
+> | * | 0d3f996 [2018-08-03 09:42:52 +0800] -heyangya 增加erp积分重复校验   
+> | |/  
+> * |   20b80bd [2018-07-27 02:36:28 +0000] -贺阳亚 Merge pull request #7 in MAR/account from dev to master * commit '1b5482c97f56bd915348f9147d172bffa9738949':
+> |\ \    fixbug
+> | |/    
+> | * 1b5482c [2018-07-27 10:35:45 +0800] -heyangya fixbug   
+> * |   f0597bd [2018-07-27 02:01:12 +0000] -贺阳亚 Merge pull request #6 in MAR/account from dev to master * commit '29990b034e383e6845187a9d9f0628ecce642929':
+> |\ \    修改积分同步方法
+> | |/    
+> | * 29990b0 [2018-07-27 09:59:59 +0800] -heyangya 修改积分同步方法   
+> |/  
+> *   8b9e35c [2018-07-26 14:33:14 +0000] -贺阳亚 Merge pull request #5 in MAR/account from hotfx_sync to master * commit '66e6295a4db9e0195d8ed9039b252a41a87c3769':
+> |\    限制erp积分消费线程数
+> | |   
+> | * 66e6295 [2018-07-26 22:32:28 +0800] -heyangya 限制erp积分消费线程数   (origin/hotfx_sync) 
+> * |   513274e [2018-07-26 07:05:04 +0000] -贺阳亚 Merge pull request #4 in MAR/account from dev to master * commit '8b3099f94996c5662f73d784e3bf0339a09bc285':
+> |\ \    获取用户账户  添加user_id 和 tenant_app_id 字段判断
+> | | |   
+> | * \   8b3099f [2018-07-25 15:36:19 +0800] -ZhangJiaMing Merge remote-tracking branch 'origin/master'   
+> | |\ \  
+> | |/ /  
+> |/| |   
+> * | |   7a9a3da [2018-07-25 06:59:19 +0000] -曾智 Merge pull request #3 in MAR/account from dev to master * commit '6356c2cbac57e99ac47f03fcb6c7dd6a5da3d044':
+> |\ \ \    微信红包删除无用代码
+> | |_|/    
+> |/| |   
+> | * | 6356c2c [2018-07-25 09:36:03 +0800] -autumn 微信红包删除无用代码   
+> * | |   42bb1a5 [2018-07-24 06:31:43 +0000] -曾智 Merge pull request #2 in MAR/account from dev to master * commit 'f5c48a95bc126f1f10444467a35b86c1938ef7b5':
+> |\ \ \    提交微信红包代码,增加微信红包补发接口
+> | |/ /    提交微信红包代码
+> | | |     增加延时参数
+> | | |     提交微信红包代码
+> | | |     增加延时参数
+> | | |     提交微信红包代码
+> | | |     提交微信红包代码
+> | | |     提交微信红包代码
+> | | |     提交微信红包代码
+> | | |     提交微信红包代码
+> | | |     提交微信红包代码
+> | | |     修改开发配置
+> | | |     微信红包调试模式
+> | | |     提交微信红包代码
+> | | |     修改代码
+> | | |     提交配置
+> | | |     删除配置
+> | | |     
+> | * | f5c48a9 [2018-07-24 11:37:12 +0800] -autumn 提交微信红包代码,增加微信红包补发接口   
+> | * |   a106f9c [2018-07-21 18:25:32 +0800] -autumn Merge remote-tracking branch 'origin/dev' into dev   
+> | |\ \  
+> | | * \   6e32880 [2018-07-21 18:06:52 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+> | | |\ \  
+> | | * | | 8575cc4 [2018-07-21 18:06:45 +0800] -heyangya 增加延时参数   
+> | * | | | f393643 [2018-07-21 18:25:21 +0800] -autumn 提交微信红包代码   
+> | | |/ /  
+> | |/| |   
+> | * | | d5dc307 [2018-07-21 18:03:35 +0800] -autumn 提交微信红包代码   
+> | |/ /  
+> | * |   e6bb61b [2018-07-21 17:52:40 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+> | |\ \  
+> | | * | 7fb10d7 [2018-07-21 17:31:11 +0800] -autumn 提交微信红包代码   
+> | | * | ac0b3c9 [2018-07-21 16:58:10 +0800] -autumn 提交微信红包代码   
+> | | * | b57461c [2018-07-21 16:49:04 +0800] -autumn 提交微信红包代码   
+> | | * | 6381d38 [2018-07-21 13:46:42 +0800] -autumn 提交微信红包代码   
+> | | * | 2323424 [2018-07-21 11:29:30 +0800] -autumn 提交微信红包代码   
+> | | * | d2441d3 [2018-07-20 18:31:15 +0800] -autumn 提交微信红包代码   
+> | | * | c6d57ae [2018-07-20 17:06:56 +0800] -autumn 微信红包调试模式   
+> | | * |   bb8560b [2018-07-20 16:27:35 +0800] -autumn Merge remote-tracking branch 'origin/dev' into dev # Conflicts:
+> | | |\ \  #	service/src/main/java/cn/com/sjfx/account/service/impl/WxPayServiceImpl.java
+> | | | | |   
+> | | * | | 4495e50 [2018-07-20 16:26:35 +0800] -autumn 提交微信红包代码   
+> | * | | | 49c10c8 [2018-07-21 17:52:34 +0800] -heyangya 增加延时参数   
+> | * | | | 1380449 [2018-07-20 17:28:44 +0800] -heyangya 修改开发配置   
+> | | |/ /  
+> | |/| |   
+> | * | | 9d7f0db [2018-07-20 15:44:31 +0800] -heyangya 修改代码   
+> | * | |   ea0dfb1 [2018-07-20 15:41:42 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev # Conflicts:
+> | |\ \ \  #	service/build.gradle
+> | | |/ /    
+> | | * | f827103 [2018-07-20 15:40:52 +0800] -autumn 提交配置   
+> | | * |   5d2b729 [2018-07-20 09:50:27 +0800] -autumn Merge remote-tracking branch 'origin/master' into dev # Conflicts:
+> | | |\ \  #	service/build.gradle
+> | |_|/ /    
+> |/| | |   
+> | * | |   9dcab3c [2018-07-20 09:47:37 +0800] -heyangya Merge remote-tracking branch 'origin/master' into dev # Conflicts:
+> | |\ \ \  #	service/build.gradle
+> | |/ / /    
+> |/| / /   
+> | |/ /    
+> * | | fa0e937 [2018-07-20 09:27:00 +0800] -autumn 增加编码设置   
+> * | | c3ef93d [2018-07-20 09:26:01 +0800] -autumn 找回依赖   
+> * | | 7cb94b2 [2018-07-20 09:23:57 +0800] -autumn 提交提交代码   
+> | * | 84d6069 [2018-07-19 21:26:42 +0800] -heyangya 删除配置   
+> |/ /  
+> * | 53ce539 [2018-07-19 16:48:07 +0800] -heyangya 增加积分变动通知链接   
+> * | e6676f3 [2018-07-19 15:48:56 +0800] -heyangya 修改使用配置中心配置   
+> * | 3b913ec [2018-07-18 15:32:33 +0800] -heyangya 找回配置2   
+> * | fd993ce [2018-07-18 15:31:02 +0800] -heyangya 找回配置   
+> * | ac3e858 [2018-07-18 14:37:58 +0800] -heyangya 修改环境配置   
+> * | 237c751 [2018-07-17 17:18:18 +0800] -heyangya 修改使用配置中心   (origin/test) 
+> * | f3b4b16 [2018-07-16 11:23:38 +0800] -heyangya fixbug   
+> * | 46a03bc [2018-07-15 17:17:45 +0800] -heyangya 修改配置   
+> * |   f3ebdc9 [2018-07-14 17:57:04 +0800] -heyangya Merge remote-tracking branch 'origin/master'   
+> |\ \  
+8a124,127
+> | | * 6e41e33 [2018-07-25 15:36:11 +0800] -ZhangJiaMing 获取用户账户  添加user_id 和 tenant_app_id 字段判断   
+> | |/  
+> | *   3a20abe [2018-07-14 16:09:53 +0800] -ZhangJiaMing Merge remote-tracking branch 'origin/master'   
+> | |\  
+12a132,133
+> * | | a9cc865 [2018-07-14 11:16:00 +0800] -heyangya 增加批量转账操作   
+> | | * 50a792f [2018-07-14 16:09:47 +0800] -ZhangJiaMing 添加账户类型字段   
+18d138
+< * | a9cc865 [2018-07-14 11:16:00 +0800] -heyangya 增加批量转账操作   

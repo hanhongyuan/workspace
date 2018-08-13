@@ -1,0 +1,39 @@
+version: '2'
+services:
+  namesrv:
+    build:
+      context: ./namesrv
+    image:  sjfx/rocketmq-namesrv:4.2.0
+    ports:
+      - 19800:9876
+    volumes:
+      - ./namesrv/logs:/opt/logs
+      - ./namesrv/store:/opt/store
+    container_name: rmqnamesrv
+    restart: unless-stopped 
+  broker:
+    build:
+      context: ./broker
+      args: 
+        runip: "47.99.32.21"
+    image:  sjfx/rocketmq-broker:4.2.0
+    ports:
+      - 10909:10909
+      - 10911:10911
+    volumes:
+      - ./broker/logs:/opt/logs
+      - ./broker/store:/opt/store
+    container_name: rmqbroker
+    restart: unless-stopped
+    depends_on:
+      - namesrv
+  console:
+    image:  styletang/rocketmq-console-ng
+    ports:
+      - 9011:8080
+    environment: 
+      - "JAVA_OPTS=-Drocketmq.namesrv.addr=rmqnamesrv:9876 -Dcom.rocketmq.sendMessageWithVIPChannel=false"
+    container_name: rmqconsole
+    restart: unless-stopped
+    depends_on:
+      - namesrv

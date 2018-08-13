@@ -1,0 +1,93 @@
+1,2c1,13
+< *   8e8202f [2018-08-04 02:27:34 +0000] -贺阳亚 Merge pull request #27 in MAR/tenant from dev to master * commit 'db1bbb7ccc90f49136eab0c7b6f73692dbc8f0c5':
+< |\    修改:ErpSaleDetail没有继承序列化
+---
+> *   f3c6ade [2018-08-06 11:38:01 +0000] -贺阳亚 Merge pull request #36 in MAR/tenant from test to master * commit '1c26073ce1755f55bb50c0905f7ab8e731bdf30f':
+> |\    修复:员工任务销售记录只去前一天以后的销售记录。
+> | |   sql优化
+> | |   修改会员级别为空默认为普通会员
+> | |   评论添加任务
+> | |   添加员工会员对照表dubbo接口
+> | |   评论发送员工任务用户id错误问题
+> | |   修改消费时间错误问题
+> | |   单据状态判断
+> | |   单据状态判断
+> | |   新增:通过员工userId获取员工信息。
+> | |   评论完成推送消息给任务
+> | |   增值金参数变化
+4c15,79
+< | * db1bbb7 [2018-08-03 18:45:35 +0800] -xuxueyi 修改:ErpSaleDetail没有继承序列化   (origin/dev) 
+---
+> | *   1c26073 [2018-08-06 11:20:27 +0000] -徐学 Merge pull request #35 in MAR/tenant from dev to test * commit 'ca2bbb551c7f46d518f23a5f59b21242d4c58ad0':
+> | |\    修复:员工任务销售记录只去前一天以后的销售记录。
+> | | |   (origin/test) 
+> | | * ca2bbb5 [2018-08-06 19:20:03 +0800] -xuxueyi 修复:员工任务销售记录只去前一天以后的销售记录。   (origin/dev) 
+> | |/  
+> | *   0e2679d [2018-08-06 10:02:34 +0000] -况秋勇 Merge pull request #34 in MAR/tenant from dev to test * commit 'e9f1b33e26f0176f0d29ab054adc887a0e042867':
+> | |\    sql优化
+> | | |   
+> | | *   e9f1b33 [2018-08-06 17:57:13 +0800] -autumn Merge remote-tracking branch 'origin/dev' into dev   
+> | | |\  
+> | | * | 49d8e9e [2018-08-06 17:56:59 +0800] -autumn sql优化   
+> | * | |   edeadf0 [2018-08-06 09:53:51 +0000] -刘裕 Merge pull request #33 in MAR/tenant from dev to test * commit '750aff6a355c0f3aca1e0cbe612a5bca70a528dd':
+> | |\ \ \    修改会员级别为空默认为普通会员
+> | | | |/    
+> | | |/|   
+> | | * | 750aff6 [2018-08-06 17:53:23 +0800] -liuyu 修改会员级别为空默认为普通会员   
+> | * | |   9c4505a [2018-08-06 09:50:01 +0000] -刘裕 Merge pull request #32 in MAR/tenant from dev to test * commit 'fb2698b8cb32696d43a1455c5a99dfbf6b5defbc':
+> | |\ \ \    评论添加任务
+> | | |/ /    添加员工会员对照表dubbo接口
+> | | | |     
+> | | * | fb2698b [2018-08-06 17:18:09 +0800] -liuyu 评论添加任务   
+> | | * | c1f3a5b [2018-08-06 16:18:29 +0800] -liuyu 添加员工会员对照表dubbo接口   
+> | * | |   514a655 [2018-08-06 07:51:00 +0000] -刘裕 Merge pull request #31 in MAR/tenant from dev to test * commit 'f543d80b9f7877ea0007d4d0f5aa0f5f206234cc':
+> | |\ \ \    评论发送员工任务用户id错误问题
+> | | |/ /    修改消费时间错误问题
+> | | | |     单据状态判断
+> | | | |     单据状态判断
+> | | | |     
+> | | * | f543d80 [2018-08-06 15:50:25 +0800] -liuyu 评论发送员工任务用户id错误问题   
+> | | * | 6559b57 [2018-08-06 15:05:41 +0800] -liuyu 修改消费时间错误问题   
+> | | * | b24af8d [2018-08-06 10:40:29 +0800] -liuyu 单据状态判断   
+> | | * |   a11b692 [2018-08-06 10:32:03 +0800] -liuyu Merge remote-tracking branch 'origin/dev' into dev   
+> | | |\ \  
+> | | * | | b27e6d0 [2018-08-06 10:31:52 +0800] -liuyu 单据状态判断   
+> | | | |/  
+> | | |/|   
+> | * | |   c4725f3 [2018-08-06 01:19:22 +0000] -曾智 Merge pull request #30 in MAR/tenant from dev to test * commit '511f57fb099051ff14942d2cf3a1e235f51454ea':
+> | |\ \ \    新增:通过员工userId获取员工信息。
+> | | | |/    build.gradle edited online with Bitbucket
+> | | |/|     
+> | | * | 511f57f [2018-08-06 09:18:14 +0800] -xuxueyi 新增:通过员工userId获取员工信息。   
+> | | * |   f872038 [2018-08-05 16:58:54 +0800] -xuxueyi Merge branches 'hotfix', 'master' and 'test' of http://bit.sjfx.com.cn/scm/mar/tenant   
+> | | |\ \  
+> | |/ / /  
+> |/| / /   
+> | |/ /    
+> | * |   26301a0 [2018-08-04 09:23:22 +0000] -曾智 Merge pull request #29 in MAR/tenant from dev to test * commit 'eb50fa0b1f68be93e1530d7000ba3f80d7dedf1d':
+> | |\ \    评论完成推送消息给任务
+> | | |/    增值金参数变化
+> | | |     
+> | | * eb50fa0 [2018-08-04 17:21:20 +0800] -liuyu 评论完成推送消息给任务   
+> | | *   baff7b1 [2018-08-04 17:05:28 +0800] -liuyu Merge remote-tracking branch 'origin/dev' into dev   
+> | | |\  
+> | |/ /  
+> | | * 6f7a363 [2018-08-04 17:04:04 +0800] -autumn 增值金参数变化   
+> * | |   bc99d39 [2018-08-04 09:00:49 +0000] -曾智 Merge pull request #28 in MAR/tenant from zengzhi/buildgradle-1533373268457 to master * commit 'ae429c46ee8f828b66ad7b94fe8fd10010a81822':
+> |\ \ \    build.gradle edited online with Bitbucket
+> | |/ /    (origin/hotfix) 
+> |/| |   
+> | * | ae429c4 [2018-08-04 09:00:39 +0000] -曾智 build.gradle edited online with Bitbucket   
+> |/ /  
+> * |   8e8202f [2018-08-04 02:27:34 +0000] -贺阳亚 Merge pull request #27 in MAR/tenant from dev to master * commit 'db1bbb7ccc90f49136eab0c7b6f73692dbc8f0c5':
+> |\ \    修改:ErpSaleDetail没有继承序列化
+> | |/    
+> | * db1bbb7 [2018-08-03 18:45:35 +0800] -xuxueyi 修改:ErpSaleDetail没有继承序列化   
+226c301
+< | | | * | | | 0833e7f [2018-07-26 16:02:08 +0800] -ZhangJiaMing 添加门店新增在服务号下判断   (origin/hotfix) 
+---
+> | | | * | | | 0833e7f [2018-07-26 16:02:08 +0800] -ZhangJiaMing 添加门店新增在服务号下判断   
+350c425
+< | | | | * 8c88431 [2018-07-23 15:42:41 +0800] -熊唐明 修改服务号参数  修改注册赠送的礼券   (origin/ZhangJiaMing) 
+---
+> | | | | * 8c88431 [2018-07-23 15:42:41 +0800] -熊唐明 修改服务号参数  修改注册赠送的礼券   

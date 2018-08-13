@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://code.alibabatech.com/schema/dubbo"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://code.alibabatech.com/schema/dubbo
+       http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
+    <!--定义了提供方应用信息，用于计算依赖关系；在 dubbo-admin 或 dubbo-monitor 会显示这个名字，方便辨识-->
+    <dubbo:application name="my-provider" owner="zengzhi" organization="sjfx.com.cn"/>
+    <!--向 redis 订阅 provider 的地址，由 redis 定时推送-->
+    <dubbo:registry address="redis://192.168.181.180:6379"/>
+    <!-- 用dubbo协议在20880端口暴露服务 -->
+    <dubbo:protocol name="dubbo" port="20880" />
+    <!--使用 dubbo 协议实现定义好的 api.PermissionService 接口-->
+    <dubbo:service interface="cn.com.sjfx.MyService" ref="myService" protocol="dubbo" validation="true"
+                   timeout="12000" />
+    <dubbo:service interface="cn.com.sjfx.UserService" ref="userService" protocol="dubbo" validation="true" />
+    <!--具体实现该接口的 bean-->
+    <bean id="myService" class="cn.com.sjfx.impl.MyServiceImpl"/>
+    <bean id="userService" class="cn.com.sjfx.impl.UserServiceImpl"/>
+
+    <bean id="callbackService" class="cn.com.sjfx.impl.CallbackServiceImpl" />
+    <dubbo:service interface="cn.com.sjfx.CallbackService" ref="callbackService" connections="1" callbacks="1000">
+        <dubbo:method name="addListener">
+            <!--通过指定类型的方式-->
+            <dubbo:argument type="cn.com.sjfx.CallbackListener" callback="true" />
+        </dubbo:method>
+    </dubbo:service>
+</beans>

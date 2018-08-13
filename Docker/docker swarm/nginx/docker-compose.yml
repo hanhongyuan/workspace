@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  wordpress:
+    image: wordpress
+    ports:
+      - 80:80
+    networks:
+      - overlay
+    deploy:
+      mode: replicated
+      replicas: 3

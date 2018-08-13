@@ -1,0 +1,36 @@
+1,4c1,3
+< *   128daf5 [2018-07-28 08:27:48 +0000] -曾智 Merge pull request #6 in MAR/authorization from dev to master * commit '6f7f3d6270ff3f177fa77fa226fa3d4b1f49eadd':
+< |\    类型错误
+< | |   修改当前登录用户拥有角色权限端写死，（导致超级导购找不到角色）
+< | |   修改当前登录用户拥有角色权限端写死，（导致超级导购找不到角色）
+---
+> *   813648b [2018-08-04 02:11:59 +0000] -贺阳亚 Merge pull request #8 in MAR/authorization from dev to master * commit 'd9568d868b8985c0dc71806f44dc02be6d71ba52':
+> |\    增加编码
+> | |   修改sql脚本
+5a5,24
+> | *   d9568d8 [2018-08-03 17:10:08 +0800] -autumn Merge remote-tracking branch 'origin/dev' into dev   (origin/dev) 
+> | |\  
+> | | * 7d35df3 [2018-08-03 11:58:54 +0800] -heyangya 修改sql脚本   
+> | * | 07aa680 [2018-08-03 17:09:58 +0800] -autumn 增加编码   
+> * | |   b8284fc [2018-08-01 07:47:50 +0000] -贺阳亚 Merge pull request #7 in MAR/authorization from dev to master * commit '4cf891c0abc79f1dfd75247c294fda8cc7812faf':
+> |\ \ \    查询角色时,返回单位管理员角色
+> | | |/    增加编码
+> | |/|     增加删除用户角色方法
+> | | |     增加事务
+> | | |     
+> | * | 4cf891c [2018-08-01 15:42:53 +0800] -heyangya 查询角色时,返回单位管理员角色   
+> | |/  
+> | * c2255bc [2018-08-01 15:35:30 +0800] -autumn 增加编码   
+> | * e5cdecf [2018-08-01 15:33:49 +0800] -autumn 增加删除用户角色方法   
+> | * 6dff9fb [2018-07-31 14:07:21 +0800] -autumn 增加事务   
+> * |   128daf5 [2018-07-28 08:27:48 +0000] -曾智 Merge pull request #6 in MAR/authorization from dev to master * commit '6f7f3d6270ff3f177fa77fa226fa3d4b1f49eadd':
+> |\ \    类型错误
+> | |/    修改当前登录用户拥有角色权限端写死，（导致超级导购找不到角色）
+> | |     修改当前登录用户拥有角色权限端写死，（导致超级导购找不到角色）
+> | |     
+10,11c29,30
+< | | |   (origin/dev) 
+< | | * 86a21f8 [2018-07-28 15:11:45 +0800] -liuyu 类型错误   (origin/hotfix) 
+---
+> | | |   
+> | | * 86a21f8 [2018-07-28 15:11:45 +0800] -liuyu 类型错误   

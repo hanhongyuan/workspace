@@ -1,0 +1,85 @@
+version: '3.1'
+services:
+  zk1:
+    image:  wurstmeister/zookeeper
+    restart: unless-stopped
+    hostname: zk1
+    container_name: zk1
+    ports:
+      - 2182:2181
+    environment:
+      ZOO_MY_ID: 1
+      ZOO_SERVERS: server.1=0.0.0.0:2888:3888 server.2=zk2:2888:3888 server.3=zk3:2888:3888
+    volumes:
+      - /mnt/ks/kfk1/zkdata:/opt/zookeeper-3.4.9/data/
+  zk2:
+    image:  wurstmeister/zookeeper
+    restart: unless-stopped
+    hostname: zk2
+    container_name: zk2
+    ports:
+      - 2183:2181
+    environment:
+      ZOO_MY_ID: 2
+      ZOO_SERVERS: server.1=zk1:2888:3888 server.2=0.0.0.0:2888:3888 server.3=zk3:2888:3888
+    volumes:
+      - /mnt/ks/kfk2/zkdata:/opt/zookeeper-3.4.9/data/
+  zk3:
+    image:  wurstmeister/zookeeper
+    restart: unless-stopped
+    hostname: zk3
+    container_name: zk3
+    ports:
+      - 2184:2181
+    environment:
+      ZOO_MY_ID: 3
+      ZOO_SERVERS: server.1=zk1:2888:3888 server.2=zk2:2888:3888 server.3=0.0.0.0:2888:3888
+    volumes:
+      - /mnt/ks/kfk3/zkdata:/opt/zookeeper-3.4.9/data/
+  kafka1:
+    image: wurstmeister/kafka
+    container_name: kafka1
+    restart: unless-stopped
+    ports:
+      - "9093:9093"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: 192.168.181.131
+      KAFKA_PORT: 9093
+      KAFKA_CREATE_TOPICS: "test001"
+      KAFKA_ZOOKEEPER_CONNECT: zk1:2181,zk2:2181,zk3:2181
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /mnt/ks/kfk1/kfkdata:/kafka
+      - /mnt/ks/kfk1/config:/opt/kafka/config
+  kafka2:
+    image: wurstmeister/kafka
+    container_name: kafka2
+    restart: unless-stopped
+    ports:
+      - "9094:9094"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: 192.168.181.131
+      KAFKA_PORT: 9094
+      KAFKA_CREATE_TOPICS: "test001"
+      KAFKA_ZOOKEEPER_CONNECT: zk1:2181,zk2:2181,zk3:2181
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /mnt/ks/kfk2/kfkdata:/kafka
+      - /mnt/ks/kfk2/config:/opt/kafka/config
+  kafka3:
+    image: wurstmeister/kafka
+    container_name: kafka3
+    restart: unless-stopped
+    ports:
+      - "9095:9095"
+    environment:
+      KAFKA_ADVERTISED_HOST_NAME: 192.168.181.131
+      KAFKA_PORT: 9095
+      KAFKA_CREATE_TOPICS: "test001"
+      KAFKA_ZOOKEEPER_CONNECT: zk1:2181,zk2:2181,zk3:2181
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /mnt/ks/kfk3/kfkdata:/kafka
+      - /mnt/ks/kfk3/config:/opt/kafka/config
+
+      

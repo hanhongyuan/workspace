@@ -1,0 +1,92 @@
+1,2c1,12
+< *   31d7f16 [2018-08-05 05:10:23 +0000] -贺阳亚 Merge pull request #7 in MAR/employee from dev to master * commit '1868be31f8fd2c142a8f36bb76b6ae774bfc800a':
+< |\    修复:评论完后数据列表计数不正确的问题。
+---
+> *   956ad24 [2018-08-06 11:45:26 +0000] -贺阳亚 Merge pull request #17 in MAR/employee from test to master * commit '98d87286645053ca3608d127a1b5eece02084bde':
+> |\    修复:员工级别默认为普通会员。
+> | |   修复:员工任务排序问题。
+> | |   修复:门店销售回评过期时间是当前时间增加1天。
+> | |   修复:backlog表sql语句多了唯一索引。
+> | |   修复:销售评论回评过期日期计算错误的问题。
+> | |   修复:生日、纪念日。会员mobileNo字段。
+> | |   修复:话术时间按创建时间倒序
+> | |   修复:员工任务获取时数据库为空的问题。
+> | |   新增:员工姓名获取
+> | |   修复:员工任务消息推送，还未测试版。
+> | |   新增:员工任务消息推送。
+4,9c14,77
+< | * 1868be3 [2018-08-04 15:09:51 +0800] -xuxueyi 修复:评论完后数据列表计数不正确的问题。   (origin/dev) 
+< * |   22361f4 [2018-08-04 08:43:57 +0000] -曾智 Merge pull request #6 in MAR/employee from zengzhi/buildgradle-1533372258960 to master * commit 'b2d737e0989d7fbdc3d8225930029163965dd73d':
+< |\ \    build.gradle edited online with Bitbucket
+< | |/    
+< |/|   
+< | * b2d737e [2018-08-04 08:43:48 +0000] -曾智 build.gradle edited online with Bitbucket   
+---
+> | *   98d8728 [2018-08-06 11:06:38 +0000] -徐学 Merge pull request #16 in MAR/employee from dev to test * commit '614811af0a3c22875088016dd6ef14a8053b15fe':
+> | |\    修复:员工级别默认为普通会员。
+> | | |   修复:员工任务排序问题。
+> | | |   (origin/test) 
+> | | * 614811a [2018-08-06 19:06:15 +0800] -xuxueyi 修复:员工级别默认为普通会员。   (origin/dev) 
+> | | * 039aea3 [2018-08-06 17:57:14 +0800] -xuxueyi 修复:员工任务排序问题。   
+> | * |   224d64c [2018-08-06 09:40:51 +0000] -徐学 Merge pull request #15 in MAR/employee from dev to test * commit '29f2d3b1ecb0f9205bf61a205ea269c88a01b5a6':
+> | |\ \    修复:门店销售回评过期时间是当前时间增加1天。
+> | | |/    
+> | | * 29f2d3b [2018-08-06 17:40:24 +0800] -xuxueyi 修复:门店销售回评过期时间是当前时间增加1天。   
+> | * |   e366393 [2018-08-06 08:55:59 +0000] -徐学 Merge pull request #14 in MAR/employee from dev to test * commit '753e6b63acacd1059a6cbd7102890b9f840d8b89':
+> | |\ \    修复:backlog表sql语句多了唯一索引。
+> | | |/    
+> | | * 753e6b6 [2018-08-06 16:55:35 +0800] -xuxueyi 修复:backlog表sql语句多了唯一索引。   
+> | |/  
+> | *   dba2a4b [2018-08-06 07:17:31 +0000] -徐学 Merge pull request #13 in MAR/employee from dev to test * commit '57887074e726daded31d36a990ca436cac08f3be':
+> | |\    修复:销售评论回评过期日期计算错误的问题。
+> | | |   
+> | | * 5788707 [2018-08-06 15:17:12 +0800] -xuxueyi 修复:销售评论回评过期日期计算错误的问题。   
+> | * |   d8ebfcc [2018-08-06 06:34:16 +0000] -徐学 Merge pull request #12 in MAR/employee from dev to test * commit '35fdd73bc02c102596d96caac880e6f9db5153a4':
+> | |\ \    修复:生日、纪念日。会员mobileNo字段。
+> | | |/    
+> | | * 35fdd73 [2018-08-06 14:33:32 +0800] -xuxueyi 修复:生日、纪念日。会员mobileNo字段。   
+> | * |   38e683c [2018-08-06 03:49:17 +0000] -徐学 Merge pull request #11 in MAR/employee from dev to test * commit '2e93e2a0c99a03fae42d67e0750c8f0a5fd81df3':
+> | |\ \    修复:话术时间按创建时间倒序
+> | | |/    
+> | | * 2e93e2a [2018-08-06 11:48:53 +0800] -xuxueyi 修复:话术时间按创建时间倒序   
+> | * |   bca5530 [2018-08-06 02:07:25 +0000] -徐学 Merge pull request #10 in MAR/employee from dev to test * commit 'bd4672b4d9c2a372676bba8dee97e359d144995f':
+> | |\ \    修复:员工任务获取时数据库为空的问题。
+> | | |/    
+> | | * bd4672b [2018-08-06 10:05:52 +0800] -xuxueyi 修复:员工任务获取时数据库为空的问题。   
+> | * |   957be62 [2018-08-06 01:28:16 +0000] -徐学 Merge pull request #9 in MAR/employee from dev to test * commit '1d494d4078b28106403b616ac680f947e81b4761':
+> | |\ \    新增:员工姓名获取
+> | | |/    
+> | | * 1d494d4 [2018-08-06 09:27:38 +0800] -xuxueyi 新增:员工姓名获取   
+> | |/  
+> | *   4f13d2a [2018-08-05 09:44:24 +0000] -徐学 Merge pull request #8 in MAR/employee from dev to test * commit '6d65b1e14b4125bb2d2bb52c95d7edbcc6d645bc':
+> | |\    修复:员工任务消息推送，还未测试版。
+> | | |   新增:员工任务消息推送。
+> | | |   build.gradle edited online with Bitbucket
+> | | |   修复:评论完后数据列表计数不正确的问题。
+> | | |   
+> | | * 6d65b1e [2018-08-05 17:43:47 +0800] -xuxueyi 修复:员工任务消息推送，还未测试版。   
+> | | * f45b42e [2018-08-05 17:42:30 +0800] -xuxueyi 新增:员工任务消息推送。   
+> | | *   cf55fbc [2018-08-05 13:52:21 +0800] -xuxueyi Merge remote-tracking branch 'origin/master'   
+> | | |\  
+> | |_|/  
+> |/| |   
+> * | |   31d7f16 [2018-08-05 05:10:23 +0000] -贺阳亚 Merge pull request #7 in MAR/employee from dev to master * commit '1868be31f8fd2c142a8f36bb76b6ae774bfc800a':
+> |\ \ \    修复:评论完后数据列表计数不正确的问题。
+> | | | |   
+> | | | *   be9e461 [2018-08-04 19:11:10 +0800] -xuxueyi Merge branches 'dev' and 'master' of http://bit.sjfx.com.cn/scm/mar/employee   
+> | | | |\  
+> | | |/ /  
+> | |/| /   
+> | |_|/    
+> |/| |     
+> * | |   22361f4 [2018-08-04 08:43:57 +0000] -曾智 Merge pull request #6 in MAR/employee from zengzhi/buildgradle-1533372258960 to master * commit 'b2d737e0989d7fbdc3d8225930029163965dd73d':
+> |\ \ \    build.gradle edited online with Bitbucket
+> | |_|/    
+> |/| |   
+> | * | b2d737e [2018-08-04 08:43:48 +0000] -曾智 build.gradle edited online with Bitbucket   
+> |/ /  
+> | * 1868be3 [2018-08-04 15:09:51 +0800] -xuxueyi 修复:评论完后数据列表计数不正确的问题。   
+13c81
+< | |   (origin/test) 
+---
+> | |   

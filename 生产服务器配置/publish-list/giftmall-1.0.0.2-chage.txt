@@ -1,0 +1,17 @@
+1,2c1,2
+< *   b4158a9 [2018-08-04 03:48:33 +0000] -曾智 Merge pull request #21 in MAR/giftmall from dev to master * commit '7303792cc7d7c651467c28cd74f194e514b22a03':
+< |\    修改异业商家未注册就能发布兑换商品问题
+---
+> *   9fa8c13 [2018-08-04 07:23:16 +0000] -曾智 Merge pull request #23 in MAR/giftmall from test to master * commit 'cd25409d28be2223342d3f545a2f5e82200705ab':
+> |\    修复异业结算价格错误bug
+4c4,11
+< | * 7303792 [2018-08-04 11:48:24 +0800] -zengzhi 修改异业商家未注册就能发布兑换商品问题   (origin/dev) 
+---
+> | *   cd25409 [2018-08-04 07:20:32 +0000] -曾智 Merge pull request #22 in MAR/giftmall from dev to test * commit '8be93e2da10e643341b345ceb2224bea7c7ce455':
+> | |\    修复异业结算价格错误bug
+> |/ /    (origin/test) 
+> | * 8be93e2 [2018-08-04 15:19:21 +0800] -zengzhi 修复异业结算价格错误bug   (origin/dev) 
+> * |   b4158a9 [2018-08-04 03:48:33 +0000] -曾智 Merge pull request #21 in MAR/giftmall from dev to master * commit '7303792cc7d7c651467c28cd74f194e514b22a03':
+> |\ \    修改异业商家未注册就能发布兑换商品问题
+> | |/    
+> | * 7303792 [2018-08-04 11:48:24 +0800] -zengzhi 修改异业商家未注册就能发布兑换商品问题   

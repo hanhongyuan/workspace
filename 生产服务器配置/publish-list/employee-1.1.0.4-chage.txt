@@ -1,0 +1,23 @@
+1,2c1,2
+< *   382be22 [2018-08-06 13:38:46 +0000] -徐学 Merge pull request #19 in MAR/employee from test to master * commit '770f697879003817fcaba63a1f97c3b4d4751efb':
+< |\    修复:enum类型判断时equls等于的问题。
+---
+> *   58917b9 [2018-08-06 14:04:42 +0000] -徐学 Merge pull request #21 in MAR/employee from test to master * commit 'e4e34fa3fff02191d322134cf56ec3400ded82bd':
+> |\    修复:status值跟scene错位。
+4,5c4,5
+< | *   770f697 [2018-08-06 13:38:30 +0000] -徐学 Merge pull request #18 in MAR/employee from dev to test * commit '5bf5daebc93f5ecacb4ab881ffb94f3f37f8ef22':
+< | |\    修复:enum类型判断时equls等于的问题。
+---
+> | *   e4e34fa [2018-08-06 14:04:31 +0000] -徐学 Merge pull request #20 in MAR/employee from dev to test * commit 'b494f56e4d585c777e8569f291730565f500e9b2':
+> | |\    修复:status值跟scene错位。
+7c7,14
+< | | * 5bf5dae [2018-08-06 21:37:59 +0800] -xuxueyi 修复:enum类型判断时equls等于的问题。   (origin/dev) 
+---
+> | | * b494f56 [2018-08-06 22:04:05 +0800] -xuxueyi 修复:status值跟scene错位。   (origin/dev) 
+> * | |   382be22 [2018-08-06 13:38:46 +0000] -徐学 Merge pull request #19 in MAR/employee from test to master * commit '770f697879003817fcaba63a1f97c3b4d4751efb':
+> |\ \ \    修复:enum类型判断时equls等于的问题。
+> | |/ /    
+> | * |   770f697 [2018-08-06 13:38:30 +0000] -徐学 Merge pull request #18 in MAR/employee from dev to test * commit '5bf5daebc93f5ecacb4ab881ffb94f3f37f8ef22':
+> | |\ \    修复:enum类型判断时equls等于的问题。
+> | | |/    
+> | | * 5bf5dae [2018-08-06 21:37:59 +0800] -xuxueyi 修复:enum类型判断时equls等于的问题。   

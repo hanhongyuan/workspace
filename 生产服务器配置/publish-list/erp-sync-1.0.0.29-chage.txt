@@ -1,0 +1,77 @@
+1,2c1,7
+< *   a286ddf [2018-07-28 12:43:18 +0000] -贺阳亚 Merge pull request #6 in MAR/erp-sync from hotfix_erp_member_empty to master * commit '1c598bca34e2206def10bbd685cd076d7c64a1c6':
+< |\    修改3
+---
+> *   56fd733 [2018-08-04 02:00:35 +0000] -贺阳亚 Merge pull request #3 in MAR/erp-sync from dev to master * commit '9fd3a4272ab134d710e4440fb333addc314df18f':
+> |\    修改脚本名称
+> | |   修改脚本名称
+> | |   修改:erptoplatform返回给erp的错误信息结构。
+> | |   限制同步结果通知线程数
+> | |   删除代码,限制消费线程数
+> | |   新增:erp-to-platform异常结果同步到线下
+4,13c9,17
+< | * 1c598bc [2018-07-28 20:42:59 +0800] -heyangya 修改3   (origin/hotfix_erp_member_empty) 
+< * |   fc472b7 [2018-07-28 12:29:05 +0000] -贺阳亚 Merge pull request #5 in MAR/erp-sync from hotfix_erp_member_empty to master * commit '8ccaf1b3f924aeea97ebbf7c2d8c0b18cca50e56':
+< |\ \    修改2
+< | |/    修改
+< | |     增加重试机制
+< | |     fixbug
+< | |     
+< | * 8ccaf1b [2018-07-28 20:28:50 +0800] -heyangya 修改2   
+< | * 61d18be [2018-07-28 20:27:35 +0800] -heyangya 修改   
+< | *   559811e [2018-07-28 20:25:55 +0800] -heyangya 删除idea   
+---
+> | * 9fd3a42 [2018-08-02 10:30:37 +0800] -heyangya 修改脚本名称   (origin/dev) 
+> | *   84f4587 [2018-08-02 10:23:58 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+> | |\  
+> | | * 584bb71 [2018-07-30 15:22:22 +0800] -xuxueyi 修改:erptoplatform返回给erp的错误信息结构。   
+> | * | eeecc5e [2018-08-02 10:23:51 +0800] -heyangya 修改脚本名称   
+> | |/  
+> | * 0b778a3 [2018-07-30 09:53:15 +0800] -heyangya 限制同步结果通知线程数   
+> | * 9d3bb77 [2018-07-30 09:50:05 +0800] -heyangya 删除代码,限制消费线程数   
+> | *   f059505 [2018-07-30 09:19:56 +0800] -heyangya Merge remote-tracking branch 'origin/master' into dev   
+17,20c21,22
+< * |   d1e83d9 [2018-07-26 08:31:26 +0000] -贺阳亚 Merge pull request #2 in MAR/erp-sync from dev to master * commit '2208130d4047f584ddee46d1eabed57f3ca0d975':
+< |\ \    fixbug
+< | | |   save
+< | | |   delete
+---
+> * |   a286ddf [2018-07-28 12:43:18 +0000] -贺阳亚 Merge pull request #6 in MAR/erp-sync from hotfix_erp_member_empty to master * commit '1c598bca34e2206def10bbd685cd076d7c64a1c6':
+> |\ \    修改3
+22,26c24,44
+< | * | 2208130 [2018-07-26 16:30:10 +0800] -heyangya fixbug   
+< | * | 43af4c9 [2018-07-26 16:14:37 +0800] -heyangya save   
+< | * | a618c16 [2018-07-26 16:14:25 +0800] -heyangya delete   
+< | | * a5cda2b [2018-07-28 20:22:43 +0800] -heyangya 增加重试机制   
+< | | * af576cc [2018-07-26 16:28:21 +0800] -heyangya fixbug   
+---
+> * \ \   fc472b7 [2018-07-28 12:29:05 +0000] -贺阳亚 Merge pull request #5 in MAR/erp-sync from hotfix_erp_member_empty to master * commit '8ccaf1b3f924aeea97ebbf7c2d8c0b18cca50e56':
+> |\ \ \    修改2
+> | | | |   修改
+> | | | |   增加重试机制
+> | | | |   fixbug
+> | | | |   
+> | | | *   825c144 [2018-07-30 09:19:47 +0800] -heyangya Merge remote-tracking branch 'origin/hotfix_erp_member_empty' into dev   
+> | | | |\  
+> | | | |/  
+> | | |/|   
+> | | * | 1c598bc [2018-07-28 20:42:59 +0800] -heyangya 修改3   (origin/hotfix_erp_member_empty) 
+> | |/ /  
+> | * | 8ccaf1b [2018-07-28 20:28:50 +0800] -heyangya 修改2   
+> | * | 61d18be [2018-07-28 20:27:35 +0800] -heyangya 修改   
+> | * |   559811e [2018-07-28 20:25:55 +0800] -heyangya 删除idea   
+> | |\ \  
+> | |/ /  
+> |/| |   
+> | * | a5cda2b [2018-07-28 20:22:43 +0800] -heyangya 增加重试机制   
+> | * | af576cc [2018-07-26 16:28:21 +0800] -heyangya fixbug   
+> | | * 1bc6609 [2018-07-28 18:39:44 +0800] -xuxueyi 新增:erp-to-platform异常结果同步到线下   
+28a47,54
+> * |   d1e83d9 [2018-07-26 08:31:26 +0000] -贺阳亚 Merge pull request #2 in MAR/erp-sync from dev to master * commit '2208130d4047f584ddee46d1eabed57f3ca0d975':
+> |\ \    fixbug
+> | |/    save
+> |/|     delete
+> | |     
+> | * 2208130 [2018-07-26 16:30:10 +0800] -heyangya fixbug   
+> | * 43af4c9 [2018-07-26 16:14:37 +0800] -heyangya save   
+> | * a618c16 [2018-07-26 16:14:25 +0800] -heyangya delete   

@@ -1,0 +1,14 @@
+1,2c1,2
+< *   88a09ab [2018-07-31 02:38:38 +0000] -曾智 Merge pull request #18 in MAR/giftmall from dev to master * commit '97de886c1af8c517c128f182443a2c983adccacf':
+< |\    商品按添加倒序排序
+---
+> *   912d5e8 [2018-08-02 06:48:38 +0000] -曾智 Merge pull request #19 in MAR/giftmall from dev to master * commit 'e9f3cd6673dfb331680a4b93208d504f07c2fe69':
+> |\    修改价格排序错误问题
+4c4,8
+< | * 97de886 [2018-07-31 10:38:12 +0800] -zengzhi 商品按添加倒序排序   (origin/dev) 
+---
+> | * e9f3cd6 [2018-08-02 14:47:39 +0800] -zengzhi 修改价格排序错误问题   (origin/dev) 
+> * |   88a09ab [2018-07-31 02:38:38 +0000] -曾智 Merge pull request #18 in MAR/giftmall from dev to master * commit '97de886c1af8c517c128f182443a2c983adccacf':
+> |\ \    商品按添加倒序排序
+> | |/    
+> | * 97de886 [2018-07-31 10:38:12 +0800] -zengzhi 商品按添加倒序排序   

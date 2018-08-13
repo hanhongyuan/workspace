@@ -1,0 +1,19 @@
+1,2c1,2
+< *   f2c95d2 [2018-08-03 10:05:18 +0000] -刘裕 Merge pull request #2 in MAR/warranty from dev to master * commit '83e9bdacb4a5f1f16627cc3edc62a842e1a1c709':
+< |\    模板消息发送人错误问题
+---
+> *   5d9b118 [2018-08-06 11:26:48 +0000] -贺阳亚 Merge pull request #4 in MAR/warranty from dev to master * commit '73104d2808ab118e85188700fad6faa4f6f52a73':
+> |\    质保单项目
+4c4,13
+< | * 83e9bda [2018-08-03 18:04:42 +0800] -liuyu 模板消息发送人错误问题   (origin/dev) 
+---
+> | * 73104d2 [2018-08-06 11:38:22 +0800] -liuyu 质保单项目   (origin/dev) 
+> * |   fb80808 [2018-08-04 09:03:19 +0000] -曾智 Merge pull request #3 in MAR/warranty from zengzhi/buildgradle-1533373419081 to master * commit '9ad488e97939ba6c7b149970a0720928253edeb1':
+> |\ \    build.gradle edited online with Bitbucket
+> | | |   
+> | * | 9ad488e [2018-08-04 09:03:09 +0000] -曾智 build.gradle edited online with Bitbucket   
+> |/ /  
+> * |   f2c95d2 [2018-08-03 10:05:18 +0000] -刘裕 Merge pull request #2 in MAR/warranty from dev to master * commit '83e9bdacb4a5f1f16627cc3edc62a842e1a1c709':
+> |\ \    模板消息发送人错误问题
+> | |/    (origin/test) 
+> | * 83e9bda [2018-08-03 18:04:42 +0800] -liuyu 模板消息发送人错误问题   

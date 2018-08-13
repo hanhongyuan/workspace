@@ -1,0 +1,20 @@
+1,2c1,2
+< *   912d5e8 [2018-08-02 06:48:38 +0000] -曾智 Merge pull request #19 in MAR/giftmall from dev to master * commit 'e9f3cd6673dfb331680a4b93208d504f07c2fe69':
+< |\    修改价格排序错误问题
+---
+> *   b4158a9 [2018-08-04 03:48:33 +0000] -曾智 Merge pull request #21 in MAR/giftmall from dev to master * commit '7303792cc7d7c651467c28cd74f194e514b22a03':
+> |\    修改异业商家未注册就能发布兑换商品问题
+4c4,14
+< | * e9f3cd6 [2018-08-02 14:47:39 +0800] -zengzhi 修改价格排序错误问题   (origin/dev) 
+---
+> | * 7303792 [2018-08-04 11:48:24 +0800] -zengzhi 修改异业商家未注册就能发布兑换商品问题   (origin/dev) 
+> * |   1e72cd6 [2018-08-02 08:11:39 +0000] -曾智 Merge pull request #20 in MAR/giftmall from dev to master * commit '4fa6fac82cb677ebfcc1bddd03d3a6bed3cd1040':
+> |\ \    测试自动构建
+> | |/    完善异业商家绑定错误提示
+> | |     
+> | * 4fa6fac [2018-08-02 16:10:26 +0800] -zengzhi 测试自动构建   
+> | * 3ae36e8 [2018-08-02 15:55:01 +0800] -zengzhi 完善异业商家绑定错误提示   
+> * |   912d5e8 [2018-08-02 06:48:38 +0000] -曾智 Merge pull request #19 in MAR/giftmall from dev to master * commit 'e9f3cd6673dfb331680a4b93208d504f07c2fe69':
+> |\ \    修改价格排序错误问题
+> | |/    
+> | * e9f3cd6 [2018-08-02 14:47:39 +0800] -zengzhi 修改价格排序错误问题   

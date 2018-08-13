@@ -1,0 +1,19 @@
+1,2c1,4
+< *   1ff7952 [2018-07-30 01:59:46 +0000] -曾智 Merge pull request #3 in MAR/valueadded from dev to master * commit 'acc9fb768d6dba64cc8efefc80e9fd0314045135':
+< |\    修改编辑时为查出备注（导致启用时把备注保存为空）
+---
+> *   8e9bd4d [2018-08-03 09:50:11 +0000] -曾智 Merge pull request #4 in MAR/valueadded from dev to master * commit 'd3b1f3ebd0880561c9d158199def7486797c64f6':
+> |\    增值单列表，按时间倒序排列
+> | |   修改增值金数据类型Long->BigDecial
+> | |   修改增值金数据类型Long->BigDecial
+3a6,11
+> | * d3b1f3e [2018-08-03 17:43:44 +0800] -autumn 增值单列表，按时间倒序排列   (origin/dev) 
+> | * e2cc996 [2018-08-01 18:00:47 +0800] -autumn 修改增值金数据类型Long->BigDecial   
+> | * cf4f8e4 [2018-08-01 17:58:05 +0800] -autumn 修改增值金数据类型Long->BigDecial   
+> * |   1ff7952 [2018-07-30 01:59:46 +0000] -曾智 Merge pull request #3 in MAR/valueadded from dev to master * commit 'acc9fb768d6dba64cc8efefc80e9fd0314045135':
+> |\ \    修改编辑时为查出备注（导致启用时把备注保存为空）
+> | |/    
+6c14
+< | | |   (origin/dev) 
+---
+> | | |   

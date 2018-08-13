@@ -1,0 +1,5 @@
+1c1,2
+< *   c27c5d4 [2018-08-04 16:18:34 +0800] -qq27375 Merge remote-tracking branch 'origin/master'   (HEAD, origin/master) 
+---
+> * 413d76d [2018-08-04 16:31:03 +0800] -qq27375 增值金只保留2位数   (HEAD, origin/master) 
+> *   c27c5d4 [2018-08-04 16:18:34 +0800] -qq27375 Merge remote-tracking branch 'origin/master'   

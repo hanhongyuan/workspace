@@ -1,0 +1,18 @@
+1c1,15
+< * a01bcfc [2018-07-19 16:51:45 +0800] -liuyu 增加配置   (HEAD, origin/master) 
+---
+> *   f2c95d2 [2018-08-03 10:05:18 +0000] -刘裕 Merge pull request #2 in MAR/warranty from dev to master * commit '83e9bdacb4a5f1f16627cc3edc62a842e1a1c709':
+> |\    模板消息发送人错误问题
+> | |   (HEAD, origin/master) 
+> | * 83e9bda [2018-08-03 18:04:42 +0800] -liuyu 模板消息发送人错误问题   (origin/dev) 
+> * |   7dea275 [2018-08-03 09:52:46 +0000] -贺阳亚 Merge pull request #1 in MAR/warranty from dev to master * commit '8bcb45e795dae5cdfeef6b20e42182d77afa3fb4':
+> |\ \    修改排序
+> | |/    
+> | *   8bcb45e [2018-08-03 17:51:51 +0800] -liuyu Merge branches 'dev' and 'master' of http://bit.sjfx.com.cn/scm/mar/warranty into dev   
+> | |\  
+> | |/  
+> |/|   
+> * | 528a321 [2018-07-20 20:25:58 +0800] -heyangya 修改支持配置中心   
+> | * 7100ab8 [2018-08-03 17:44:28 +0800] -liuyu 修改排序   
+> |/  
+> * a01bcfc [2018-07-19 16:51:45 +0800] -liuyu 增加配置   

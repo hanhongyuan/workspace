@@ -1,0 +1,31 @@
+1,4c1,2
+< *   c8d5710 [2018-08-04 03:56:33 +0000] -贺阳亚 Merge pull request #10 in MAR/authorization from dev to master * commit '69fe4e5b97bca1583183686605988c9d2687bcf8':
+< |\    超级登录正式平台演示商家不做限制
+< | |   添加脚本
+< | |   添加脚本
+---
+> *   a095ba9 [2018-08-04 07:36:51 +0000] -刘裕 Merge pull request #13 in MAR/authorization from dev to master * commit '3879a7044fa492e9652ee6168f11de61d96b6789':
+> |\    超级登录正式平台演示商家不做限制(把!= 换成!equals())
+6,9c4,5
+< | *   69fe4e5 [2018-08-04 03:54:37 +0000] -刘裕 Merge pull request #9 in MAR/authorization from hotfix to dev * commit 'dcde6d4b875b59f77b72a6c663f3b45d6905720e':
+< | |\    超级登录正式平台演示商家不做限制
+< | | |   添加脚本
+< | | |   添加脚本
+---
+> | *   3879a70 [2018-08-04 06:37:09 +0000] -刘裕 Merge pull request #11 in MAR/authorization from hotfix to dev * commit '1c052595037d4f86fe7df6a0e433d624037cb300':
+> | |\    超级登录正式平台演示商家不做限制(把!= 换成!equals())
+11c7,18
+< | | * dcde6d4 [2018-08-04 11:53:42 +0800] -liuyu 超级登录正式平台演示商家不做限制   (origin/hotfix) 
+---
+> | | * 1c05259 [2018-08-04 14:36:44 +0800] -liuyu 超级登录正式平台演示商家不做限制(把!= 换成!equals())   (origin/hotfix) 
+> * | |   c8d5710 [2018-08-04 03:56:33 +0000] -贺阳亚 Merge pull request #10 in MAR/authorization from dev to master * commit '69fe4e5b97bca1583183686605988c9d2687bcf8':
+> |\ \ \    超级登录正式平台演示商家不做限制
+> | |/ /    添加脚本
+> | | |     添加脚本
+> | | |     (origin/test) 
+> | * |   69fe4e5 [2018-08-04 03:54:37 +0000] -刘裕 Merge pull request #9 in MAR/authorization from hotfix to dev * commit 'dcde6d4b875b59f77b72a6c663f3b45d6905720e':
+> | |\ \    超级登录正式平台演示商家不做限制
+> | | |/    添加脚本
+> | | |     添加脚本
+> | | |     
+> | | * dcde6d4 [2018-08-04 11:53:42 +0800] -liuyu 超级登录正式平台演示商家不做限制   

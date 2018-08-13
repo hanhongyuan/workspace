@@ -1,0 +1,1 @@
+docker run frostasm/netxms-server:2.2.4

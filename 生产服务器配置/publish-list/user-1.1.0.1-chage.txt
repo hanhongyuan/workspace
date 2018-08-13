@@ -1,0 +1,412 @@
+1,3c1,4
+< *   2d1aed6 [2018-08-03 09:48:59 +0000] -贺阳亚 Merge pull request #38 in MAR/user-service from dev to master * commit '4b66fce403e7aa14897e032d166735a9eb2d7292':
+< |\    修改员工离职后,用户通过扫码注册时的流程3
+< | |   修改员工离职后,用户通过扫码注册时的流程2
+---
+> *   8a6f63f [2018-08-06 11:43:36 +0000] -贺阳亚 Merge pull request #41 in MAR/user-service from test to master * commit '1af66b47bc3895e4392094fac36e4bf33bcef9e1':
+> |\    修改:会员信息获取从tenantuser关联获取。
+> | |   增加会员级别dubbo接口
+> | |   增加会员级别dubbo接口
+5,15c6,14
+< | * 4b66fce [2018-08-03 17:28:56 +0800] -heyangya 修改员工离职后,用户通过扫码注册时的流程3   (origin/dev) 
+< | * d6c176e [2018-08-03 17:26:20 +0800] -heyangya 修改员工离职后,用户通过扫码注册时的流程2   
+< * |   4d85627 [2018-08-03 08:50:31 +0000] -贺阳亚 Merge pull request #37 in MAR/user-service from dev to master * commit '2ff770c591337389059812c748a813a97d6e3ab1':
+< |\ \    修改员工离职后,用户通过扫码注册时的流程
+< | |/    修复更换员工与会员BUG
+< | |     修复员工离职未更换导购BUG
+< | |     
+< | *   2ff770c [2018-08-03 16:49:23 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+< | |\  
+< | | * a4b2e5a [2018-08-03 16:48:10 +0800] -autumn 修复更换员工与会员BUG   
+< | | *   92a527b [2018-08-03 16:16:52 +0800] -autumn Merge remote-tracking branch 'origin/dev' into dev   
+---
+> | *   1af66b4 [2018-08-06 03:36:51 +0000] -徐学 Merge pull request #40 in MAR/user-service from dev to test * commit 'b20f87b7887a9e702ddeeca6c1e74b6dd2d25678':
+> | |\    修改:会员信息获取从tenantuser关联获取。
+> | | |   增加会员级别dubbo接口
+> | | |   build.gradle edited online with Bitbucket
+> | | |   增加会员级别dubbo接口
+> | | |   (origin/test) 
+> | | * b20f87b [2018-08-06 11:34:55 +0800] -xuxueyi 修改:会员信息获取从tenantuser关联获取。   (origin/dev) 
+> | | * 7150b21 [2018-08-04 17:17:11 +0800] -liuyu 增加会员级别dubbo接口   
+> | | *   d557c84 [2018-08-04 17:08:09 +0800] -liuyu Merge branches 'dev' and 'master' of http://bit.sjfx.com.cn/scm/mar/user-service into dev   
+17,36c16,19
+< | | * | 1297639 [2018-08-03 16:10:22 +0800] -autumn 修复员工离职未更换导购BUG   
+< | * | | e92e7d9 [2018-08-03 16:49:10 +0800] -heyangya 修改员工离职后,用户通过扫码注册时的流程   
+< | | |/  
+< | |/|   
+< * | |   a1eec2d [2018-08-03 04:02:22 +0000] -贺阳亚 Merge pull request #36 in MAR/user-service from dev to master * commit 'a8f1e6319b3a3d548723770210013d3d93883952':
+< |\ \ \    增加sql; 修复bug
+< | |/ /    增加首次绑定校验
+< | | |     erp积分同步修改；绑定时同步一次数据库原有数据3
+< | | |     
+< | * | a8f1e63 [2018-08-03 12:01:24 +0800] -heyangya 增加sql; 修复bug   
+< | * | 49c46e5 [2018-08-03 11:28:44 +0800] -heyangya 增加首次绑定校验   
+< | * | 7ac890a [2018-08-03 11:12:08 +0800] -heyangya erp积分同步修改；绑定时同步一次数据库原有数据3   
+< * | |   fc141ab [2018-08-03 02:35:25 +0000] -贺阳亚 Merge pull request #35 in MAR/user-service from dev to master * commit '5f977a4db6de0f2994127e68e56d227c8f5b64d7':
+< |\ \ \    erp积分同步修改；绑定时同步一次数据库原有数据2
+< | |/ /    erp积分同步修改；绑定时同步一次数据库原有数据
+< | | |     
+< | * | 5f977a4 [2018-08-03 10:33:55 +0800] -heyangya erp积分同步修改；绑定时同步一次数据库原有数据2   
+< | * | 257d001 [2018-08-03 10:09:55 +0800] -heyangya erp积分同步修改；绑定时同步一次数据库原有数据   
+< * | |   14960bf [2018-08-03 01:44:47 +0000] -贺阳亚 Merge pull request #34 in MAR/user-service from dev to master * commit '23f05cc3a5e539efa2ed43c326f65608d229acfa':
+< |\ \ \    erp积分转账使用integral_erp_id作为业务id
+---
+> | |_|/  
+> |/| |   
+> * | |   8e42397 [2018-08-04 09:01:37 +0000] -曾智 Merge pull request #39 in MAR/user-service from zengzhi/buildgradle-1533373317163 to master * commit '4d0eecf19fe1f8b360621195d56cfcfb567683cb':
+> |\ \ \    build.gradle edited online with Bitbucket
+38,83c21,26
+< | * |   23f05cc [2018-08-03 09:31:49 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+< | |\ \  
+< | * | | eaceb2c [2018-08-03 09:31:41 +0800] -heyangya erp积分转账使用integral_erp_id作为业务id   
+< * | | |   b1f2ea6 [2018-08-03 01:18:11 +0000] -曾智 Merge pull request #33 in MAR/user-service from dev to master * commit '5acf62419e2f4ac818f2a338df76660d01d14a62':
+< |\ \ \ \    修改:erpmember日志说明
+< | | |/ /    快递地址最后一个删除不了BUG修复
+< | |/| |     
+< | * | | 5acf624 [2018-08-02 16:30:38 +0800] -xuxueyi 修改:erpmember日志说明   
+< | * | |   14cb0a1 [2018-08-02 16:29:18 +0800] -xuxueyi Merge branches 'dev' and 'master' of http://bit.sjfx.com.cn/scm/mar/user-service   
+< | |\ \ \  
+< |/ / / /  
+< | | | _   
+< | * | af5442e [2018-08-02 16:20:52 +0800] -autumn 快递地址最后一个删除不了BUG修复   
+< * | |   8a1c85c [2018-08-02 07:50:22 +0000] -曾智 Merge pull request #32 in MAR/user-service from dev to master * commit '1fd16f9a284e6295f560252f39485c3915a83c34':
+< |\ \ \    增加异常抛出
+< | |/ /    增加异常抛出
+< | | |     会员注册时强校验门店id
+< | | |     
+< | * | 1fd16f9 [2018-08-02 15:48:28 +0800] -autumn 增加异常抛出   
+< | * | 419c962 [2018-08-02 15:47:57 +0800] -autumn 增加异常抛出   
+< | |/  
+< | * 11aedd3 [2018-08-02 11:38:58 +0800] -heyangya 会员注册时强校验门店id   
+< * |   6462797 [2018-08-02 03:30:31 +0000] -贺阳亚 Merge pull request #31 in MAR/user-service from dev to master * commit 'af1ac57b8a28e5be5c74854d9e6549ecb081a2e5':
+< |\ \    修复多个手机号数据时空指针问题2
+< | |/    修复多个手机号数据时空指针问题
+< | |     修改:员工任务获取会员信息逻辑。
+< | |     
+< | * af1ac57 [2018-08-02 11:29:51 +0800] -heyangya 修复多个手机号数据时空指针问题2   
+< | *   f3cef98 [2018-08-02 11:27:55 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+< | |\  
+< | | * 7dd9b88 [2018-08-01 19:29:36 +0800] -xuxueyi 修改:员工任务获取会员信息逻辑。   
+< | |/  
+< |/|   
+< * |   4d1ffc9 [2018-08-01 09:51:01 +0000] -贺阳亚 Merge pull request #30 in MAR/user-service from dev to master * commit 'd048ca74f74dacf992bee25935996a574a0ad434':
+< |\ \    修复bug
+< | | |   修改:获取会员信息。 新增:获取会员级别信息。
+< | | |   
+< | | * 8216f46 [2018-08-02 11:27:43 +0800] -heyangya 修复多个手机号数据时空指针问题   
+< | |/  
+< | *   d048ca7 [2018-08-01 17:50:08 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+< | |\  
+< | | * 8615699 [2018-08-01 15:03:50 +0800] -xuxueyi 修改:获取会员信息。 新增:获取会员级别信息。   
+< | |/  
+< |/|   
+< * |   de6ef01 [2018-08-01 04:04:49 +0000] -贺阳亚 Merge pull request #29 in MAR/user-service from dev to master * commit '10cfd3ef175147cb852df78968fdc180cc5511e6':
+< |\ \    fixbug
+---
+> |/| |   
+> | * | 4d0eecf [2018-08-04 09:01:26 +0000] -曾智 build.gradle edited online with Bitbucket   
+> |/ /  
+> * |   2d1aed6 [2018-08-03 09:48:59 +0000] -贺阳亚 Merge pull request #38 in MAR/user-service from dev to master * commit '4b66fce403e7aa14897e032d166735a9eb2d7292':
+> |\ \    修改员工离职后,用户通过扫码注册时的流程3
+> | | |   修改员工离职后,用户通过扫码注册时的流程2
+85,97c28,31
+< * \ \   94e34c5 [2018-08-01 03:44:17 +0000] -贺阳亚 Merge pull request #28 in MAR/user-service from dev to master * commit '87d1db22e9a678e38a15017b83f564701150c9b0':
+< |\ \ \    修改注册和员工绑定流程
+< | | | |   新增:获取会员等级的接口。
+< | | | |   新增:获取绑定顾问的会员信息时是农历还是阳历字段.v1
+< | | | |   新增:获取绑定顾问的会员信息时是农历还是阳历字段
+< | | | |   修复数据校验错误
+< | | | |   更新会员与员工的绑定关联
+< | | | |   绑定员工逻辑修改
+< | | | |   修改注册逻辑
+< | | | |   修改注册逻辑
+< | | | |   新增:获取会员绑定了顾问同时有生日或纪念日的记录。合并分支解决代码冲突。
+< | | | |   新增:获取会员绑定了顾问同时有生日或纪念日的记录。
+< | | | |   增加会员-员工表初始化数据
+---
+> * \ \   4d85627 [2018-08-03 08:50:31 +0000] -贺阳亚 Merge pull request #37 in MAR/user-service from dev to master * commit '2ff770c591337389059812c748a813a97d6e3ab1':
+> |\ \ \    修改员工离职后,用户通过扫码注册时的流程
+> | | | |   修复更换员工与会员BUG
+> | | | |   修复员工离职未更换导购BUG
+99,120c33,36
+< | | | * e6a1a6f [2018-08-01 17:50:01 +0800] -heyangya 修复bug   
+< | | |/  
+< | | * 10cfd3e [2018-08-01 12:04:15 +0800] -heyangya fixbug   
+< | |/  
+< | *   87d1db2 [2018-08-01 10:16:05 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+< | |\  
+< | | * b51e774 [2018-08-01 09:28:28 +0800] -xuxueyi 新增:获取会员等级的接口。   
+< | | *   3c9f991 [2018-07-31 16:39:02 +0800] -xuxueyi Merge branch 'dev' of http://bit.sjfx.com.cn/scm/mar/user-service # Conflicts:
+< | | |\  #	interface/src/main/java/cn/com/sjfx/user/ErpMemberInterface.java
+< | | | | #	interface/src/main/java/cn/com/sjfx/user/UserInterface.java
+< | | | | #	service/src/main/java/cn/com/sjfx/user/service/impl/ErpMemberInterfaceImpl.java
+< | | | | #	service/src/main/java/cn/com/sjfx/user/service/impl/UserServiceImpl.java
+< | | | | #	service/src/main/resources/mapper/ErpMemberMapper.xml
+< | | | |   
+< | | * | 1158d72 [2018-07-31 16:36:50 +0800] -xuxueyi 新增:获取绑定顾问的会员信息时是农历还是阳历字段.v1   
+< | | * | c3cac1b [2018-07-31 16:35:03 +0800] -xuxueyi 新增:获取绑定顾问的会员信息时是农历还是阳历字段   
+< | | * |   5c1bf3d [2018-07-31 16:34:15 +0800] -xuxueyi Merge remote-tracking branch 'origin/master'   
+< | | |\ \  
+< | |_|/ /  
+< |/| | |   
+< * | | |   8833b12 [2018-07-31 06:58:19 +0000] -曾智 Merge pull request #27 in MAR/user-service from zengzhi/user-10.0-1533020276939 to master * commit '4b026266f3f6675561c749091c9b243b9fb58b37':
+< |\ \ \ \    user-1.0.0 edited online with Bitbucket
+---
+> * \ \ \   a1eec2d [2018-08-03 04:02:22 +0000] -贺阳亚 Merge pull request #36 in MAR/user-service from dev to master * commit 'a8f1e6319b3a3d548723770210013d3d93883952':
+> |\ \ \ \    增加sql; 修复bug
+> | | | | |   增加首次绑定校验
+> | | | | |   erp积分同步修改；绑定时同步一次数据库原有数据3
+122,127c38,101
+< | * | | | 4b02626 [2018-07-31 06:58:04 +0000] -曾智 user-1.0.0 edited online with Bitbucket   (origin/zengzhi/user-10.0-1533020276939) 
+< |/ / / /  
+< | * | | 5f140e0 [2018-08-01 10:15:59 +0800] -heyangya 修改注册和员工绑定流程   
+< | | |/  
+< | |/|   
+< | * |   fa6cd66 [2018-07-31 16:07:24 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+---
+> * \ \ \ \   fc141ab [2018-08-03 02:35:25 +0000] -贺阳亚 Merge pull request #35 in MAR/user-service from dev to master * commit '5f977a4db6de0f2994127e68e56d227c8f5b64d7':
+> |\ \ \ \ \    erp积分同步修改；绑定时同步一次数据库原有数据2
+> | | | | | |   erp积分同步修改；绑定时同步一次数据库原有数据
+> | | | | | |   
+> * \ \ \ \ \   14960bf [2018-08-03 01:44:47 +0000] -贺阳亚 Merge pull request #34 in MAR/user-service from dev to master * commit '23f05cc3a5e539efa2ed43c326f65608d229acfa':
+> |\ \ \ \ \ \    erp积分转账使用integral_erp_id作为业务id
+> | | | | | | |   
+> * \ \ \ \ \ \   b1f2ea6 [2018-08-03 01:18:11 +0000] -曾智 Merge pull request #33 in MAR/user-service from dev to master * commit '5acf62419e2f4ac818f2a338df76660d01d14a62':
+> |\ \ \ \ \ \ \    修改:erpmember日志说明
+> | | | | | | | |   快递地址最后一个删除不了BUG修复
+> | | | | | | | |   
+> | | | | | | | *   8d90999 [2018-08-04 16:12:30 +0800] -liuyu Merge remote-tracking branch 'origin/dev' into dev   
+> | | | | | | | |\  
+> | | | | | | | |/  
+> | | | | | | |/|   
+> | | | | | | * | 4b66fce [2018-08-03 17:28:56 +0800] -heyangya 修改员工离职后,用户通过扫码注册时的流程3   
+> | | | | | | * | d6c176e [2018-08-03 17:26:20 +0800] -heyangya 修改员工离职后,用户通过扫码注册时的流程2   
+> | | | | | |/ /  
+> | | | | | * |   2ff770c [2018-08-03 16:49:23 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+> | | | | | |\ \  
+> | | | | | | * | a4b2e5a [2018-08-03 16:48:10 +0800] -autumn 修复更换员工与会员BUG   
+> | | | | | | * |   92a527b [2018-08-03 16:16:52 +0800] -autumn Merge remote-tracking branch 'origin/dev' into dev   
+> | | | | | | |\ \  
+> | | | | | |_|/ /  
+> | | | | |/| | |   
+> | | | | | | * | 1297639 [2018-08-03 16:10:22 +0800] -autumn 修复员工离职未更换导购BUG   
+> | | | | | * | | e92e7d9 [2018-08-03 16:49:10 +0800] -heyangya 修改员工离职后,用户通过扫码注册时的流程   
+> | | | | |/ / /  
+> | | | | * | | a8f1e63 [2018-08-03 12:01:24 +0800] -heyangya 增加sql; 修复bug   
+> | | | | * | | 49c46e5 [2018-08-03 11:28:44 +0800] -heyangya 增加首次绑定校验   
+> | | | | * | | 7ac890a [2018-08-03 11:12:08 +0800] -heyangya erp积分同步修改；绑定时同步一次数据库原有数据3   
+> | | | |/ / /  
+> | | | * | | 5f977a4 [2018-08-03 10:33:55 +0800] -heyangya erp积分同步修改；绑定时同步一次数据库原有数据2   
+> | | | * | | 257d001 [2018-08-03 10:09:55 +0800] -heyangya erp积分同步修改；绑定时同步一次数据库原有数据   
+> | | |/ / /  
+> | | * | |   23f05cc [2018-08-03 09:31:49 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+> | | |\ \ \  
+> | | |/ / /  
+> | |/| | |   
+> | * | | | 5acf624 [2018-08-02 16:30:38 +0800] -xuxueyi 修改:erpmember日志说明   
+> | * | | |   14cb0a1 [2018-08-02 16:29:18 +0800] -xuxueyi Merge branches 'dev' and 'master' of http://bit.sjfx.com.cn/scm/mar/user-service   
+> | |\ \ \ \  
+> |/ / / / /  
+> | | | _ /   
+> | | |  /    
+> | * | | af5442e [2018-08-02 16:20:52 +0800] -autumn 快递地址最后一个删除不了BUG修复   
+> * | | |   8a1c85c [2018-08-02 07:50:22 +0000] -曾智 Merge pull request #32 in MAR/user-service from dev to master * commit '1fd16f9a284e6295f560252f39485c3915a83c34':
+> |\ \ \ \    增加异常抛出
+> | |/ / /    增加异常抛出
+> | | | |     会员注册时强校验门店id
+> | | | |     
+> | * | | 1fd16f9 [2018-08-02 15:48:28 +0800] -autumn 增加异常抛出   
+> | * | | 419c962 [2018-08-02 15:47:57 +0800] -autumn 增加异常抛出   
+> * | | |   6462797 [2018-08-02 03:30:31 +0000] -贺阳亚 Merge pull request #31 in MAR/user-service from dev to master * commit 'af1ac57b8a28e5be5c74854d9e6549ecb081a2e5':
+> |\ \ \ \    修复多个手机号数据时空指针问题2
+> | | | | |   修复多个手机号数据时空指针问题
+> | | | | |   修改:员工任务获取会员信息逻辑。
+> | | | | |   
+> | | | * | eaceb2c [2018-08-03 09:31:41 +0800] -heyangya erp积分转账使用integral_erp_id作为业务id   
+> | | |/ /  
+> | | * | 11aedd3 [2018-08-02 11:38:58 +0800] -heyangya 会员注册时强校验门店id   
+> | |/ /  
+> | * | af1ac57 [2018-08-02 11:29:51 +0800] -heyangya 修复多个手机号数据时空指针问题2   
+> | * |   f3cef98 [2018-08-02 11:27:55 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+129,130c103
+< | | * | 72a52a1 [2018-07-31 16:05:59 +0800] -autumn 更新会员与员工的绑定关联   
+< | * | | 4ea73d1 [2018-07-31 16:07:16 +0800] -heyangya 修复数据校验错误   
+---
+> | | * | 7dd9b88 [2018-08-01 19:29:36 +0800] -xuxueyi 修改:员工任务获取会员信息逻辑。   
+132,141d104
+< | * | 20d971b [2018-07-31 15:41:46 +0800] -heyangya 绑定员工逻辑修改   
+< | * | 5eb7729 [2018-07-31 15:11:47 +0800] -heyangya 修改注册逻辑   
+< | * |   73d48eb [2018-07-31 15:11:19 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev # Conflicts:
+< | |\ \  #	service/src/main/resources/bootstrap.properties
+< | | |/  #	sql/user-1.0.0
+< | | |     
+< | | * 2527b48 [2018-07-31 11:43:27 +0800] -xuxueyi 新增:获取会员绑定了顾问同时有生日或纪念日的记录。合并分支解决代码冲突。   
+< | | *   6eeba9f [2018-07-31 11:42:35 +0800] -xuxueyi Merge remote-tracking branch 'origin/master' # Conflicts:
+< | | |\  #	service/src/main/java/cn/com/sjfx/user/data/dao/TenantUserMapper.java
+< | |_|/    
+143,148c106,108
+< * | |   83f3cbd [2018-07-31 03:26:34 +0000] -曾智 Merge pull request #24 in MAR/user-service from dev to master * commit 'd0c2527cefe52b40d98b29ce6e5882f82b30488d':
+< |\ \ \    修改员工离职及员工分配
+< | | | |   修改sql字段类型
+< | | | |   修改:erp增加saveorupdate
+< | | | |   sql优化
+< | | | |   增加手机号模糊搜索
+---
+> * | |   4d1ffc9 [2018-08-01 09:51:01 +0000] -贺阳亚 Merge pull request #30 in MAR/user-service from dev to master * commit 'd048ca74f74dacf992bee25935996a574a0ad434':
+> |\ \ \    修复bug
+> | | | |   修改:获取会员信息。 新增:获取会员级别信息。
+150,151c110,191
+< | * | | d0c2527 [2018-07-31 11:23:30 +0800] -autumn 修改员工离职及员工分配   
+< | | | * a4c5300 [2018-07-31 11:31:56 +0800] -xuxueyi 新增:获取会员绑定了顾问同时有生日或纪念日的记录。   
+---
+> | | * | 8216f46 [2018-08-02 11:27:43 +0800] -heyangya 修复多个手机号数据时空指针问题   
+> | |/ /  
+> | * |   d048ca7 [2018-08-01 17:50:08 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+> | |\ \  
+> | | * | 8615699 [2018-08-01 15:03:50 +0800] -xuxueyi 修改:获取会员信息。 新增:获取会员级别信息。   
+> | |/ /  
+> |/| |   
+> * | |   de6ef01 [2018-08-01 04:04:49 +0000] -贺阳亚 Merge pull request #29 in MAR/user-service from dev to master * commit '10cfd3ef175147cb852df78968fdc180cc5511e6':
+> |\ \ \    fixbug
+> | | | |   
+> * \ \ \   94e34c5 [2018-08-01 03:44:17 +0000] -贺阳亚 Merge pull request #28 in MAR/user-service from dev to master * commit '87d1db22e9a678e38a15017b83f564701150c9b0':
+> |\ \ \ \    修改注册和员工绑定流程
+> | | | | |   新增:获取会员等级的接口。
+> | | | | |   新增:获取绑定顾问的会员信息时是农历还是阳历字段.v1
+> | | | | |   新增:获取绑定顾问的会员信息时是农历还是阳历字段
+> | | | | |   修复数据校验错误
+> | | | | |   更新会员与员工的绑定关联
+> | | | | |   绑定员工逻辑修改
+> | | | | |   修改注册逻辑
+> | | | | |   修改注册逻辑
+> | | | | |   新增:获取会员绑定了顾问同时有生日或纪念日的记录。合并分支解决代码冲突。
+> | | | | |   新增:获取会员绑定了顾问同时有生日或纪念日的记录。
+> | | | | |   增加会员-员工表初始化数据
+> | | | | |   
+> | | | * | e6a1a6f [2018-08-01 17:50:01 +0800] -heyangya 修复bug   
+> | | |/ /  
+> | | * | 10cfd3e [2018-08-01 12:04:15 +0800] -heyangya fixbug   
+> | |/ /  
+> | * |   87d1db2 [2018-08-01 10:16:05 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+> | |\ \  
+> | | * | b51e774 [2018-08-01 09:28:28 +0800] -xuxueyi 新增:获取会员等级的接口。   
+> | | * |   3c9f991 [2018-07-31 16:39:02 +0800] -xuxueyi Merge branch 'dev' of http://bit.sjfx.com.cn/scm/mar/user-service # Conflicts:
+> | | |\ \  #	interface/src/main/java/cn/com/sjfx/user/ErpMemberInterface.java
+> | | | | | #	interface/src/main/java/cn/com/sjfx/user/UserInterface.java
+> | | | | | #	service/src/main/java/cn/com/sjfx/user/service/impl/ErpMemberInterfaceImpl.java
+> | | | | | #	service/src/main/java/cn/com/sjfx/user/service/impl/UserServiceImpl.java
+> | | | | | #	service/src/main/resources/mapper/ErpMemberMapper.xml
+> | | | | |   
+> | | * | | 1158d72 [2018-07-31 16:36:50 +0800] -xuxueyi 新增:获取绑定顾问的会员信息时是农历还是阳历字段.v1   
+> | | * | | c3cac1b [2018-07-31 16:35:03 +0800] -xuxueyi 新增:获取绑定顾问的会员信息时是农历还是阳历字段   
+> | | * | |   5c1bf3d [2018-07-31 16:34:15 +0800] -xuxueyi Merge remote-tracking branch 'origin/master'   
+> | | |\ \ \  
+> | |_|/ / /  
+> |/| | | |   
+> * | | | |   8833b12 [2018-07-31 06:58:19 +0000] -曾智 Merge pull request #27 in MAR/user-service from zengzhi/user-10.0-1533020276939 to master * commit '4b026266f3f6675561c749091c9b243b9fb58b37':
+> |\ \ \ \ \    user-1.0.0 edited online with Bitbucket
+> | | | | | |   
+> | * | | | | 4b02626 [2018-07-31 06:58:04 +0000] -曾智 user-1.0.0 edited online with Bitbucket   (origin/zengzhi/user-10.0-1533020276939) 
+> |/ / / / /  
+> | * | | | 5f140e0 [2018-08-01 10:15:59 +0800] -heyangya 修改注册和员工绑定流程   
+> | | |/ /  
+> | |/| |   
+> | * | |   fa6cd66 [2018-07-31 16:07:24 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev   
+> | |\ \ \  
+> | | * | | 72a52a1 [2018-07-31 16:05:59 +0800] -autumn 更新会员与员工的绑定关联   
+> | * | | | 4ea73d1 [2018-07-31 16:07:16 +0800] -heyangya 修复数据校验错误   
+> | |/ / /  
+> | * | | 20d971b [2018-07-31 15:41:46 +0800] -heyangya 绑定员工逻辑修改   
+> | * | | 5eb7729 [2018-07-31 15:11:47 +0800] -heyangya 修改注册逻辑   
+> | * | |   73d48eb [2018-07-31 15:11:19 +0800] -heyangya Merge remote-tracking branch 'origin/dev' into dev # Conflicts:
+> | |\ \ \  #	service/src/main/resources/bootstrap.properties
+> | | |/ /  #	sql/user-1.0.0
+> | | | |     
+> | | * | 2527b48 [2018-07-31 11:43:27 +0800] -xuxueyi 新增:获取会员绑定了顾问同时有生日或纪念日的记录。合并分支解决代码冲突。   
+> | | * |   6eeba9f [2018-07-31 11:42:35 +0800] -xuxueyi Merge remote-tracking branch 'origin/master' # Conflicts:
+> | | |\ \  #	service/src/main/java/cn/com/sjfx/user/data/dao/TenantUserMapper.java
+> | |_|/ /    
+> |/| | |   
+> * | | |   83f3cbd [2018-07-31 03:26:34 +0000] -曾智 Merge pull request #24 in MAR/user-service from dev to master * commit 'd0c2527cefe52b40d98b29ce6e5882f82b30488d':
+> |\ \ \ \    修改员工离职及员工分配
+> | | | | |   修改sql字段类型
+> | | | | |   修改:erp增加saveorupdate
+> | | | | |   sql优化
+> | | | | |   增加手机号模糊搜索
+> | | | | |   
+> | * | | | d0c2527 [2018-07-31 11:23:30 +0800] -autumn 修改员工离职及员工分配   
+> | | | * | a4c5300 [2018-07-31 11:31:56 +0800] -xuxueyi 新增:获取会员绑定了顾问同时有生日或纪念日的记录。   
+> | | |/ /  
+> | |/| |   
+> | | * | d43c3c3 [2018-07-31 15:10:15 +0800] -heyangya 修改注册逻辑   
+> | | * | 3eb70fd [2018-07-31 09:31:36 +0800] -heyangya 增加会员-员工表初始化数据   
+> | | | * 8801cf7 [2018-08-04 16:12:20 +0800] -liuyu 增加会员级别dubbo接口   
+156a197,203
+> | | |/    
+> | | *   163e7e0 [2018-07-30 17:44:31 +0800] -heyangya Merge remote-tracking branch 'origin/master' into dev   
+> | | |\  
+> | |_|/  
+> |/| |   
+> * | |   1a6f6b6 [2018-07-30 09:42:27 +0000] -贺阳亚 Merge pull request #26 in MAR/user-service from hotfix_register to master * commit '779ff54156477b582e3d33a0ccd38bdf4258a369':
+> |\ \ \    修复注册问题
+158,172c205
+< | * | | ba4b4f8 [2018-07-30 18:01:51 +0800] -xuxueyi 修改:erp增加saveorupdate   
+< | * | |   5cd352c [2018-07-30 14:25:27 +0800] -xuxueyi Merge branches 'dev' and 'master' of http://bit.sjfx.com.cn/scm/mar/user-service   
+< | |\ \ \  
+< | | | | * d43c3c3 [2018-07-31 15:10:15 +0800] -heyangya 修改注册逻辑   
+< | | | | * 3eb70fd [2018-07-31 09:31:36 +0800] -heyangya 增加会员-员工表初始化数据   
+< | | | |/  
+< | | | *   163e7e0 [2018-07-30 17:44:31 +0800] -heyangya Merge remote-tracking branch 'origin/master' into dev   
+< | | | |\  
+< | |_|_|/  
+< |/| | |   
+< * | | |   1a6f6b6 [2018-07-30 09:42:27 +0000] -贺阳亚 Merge pull request #26 in MAR/user-service from hotfix_register to master * commit '779ff54156477b582e3d33a0ccd38bdf4258a369':
+< |\ \ \ \    修复注册问题
+< | |/ / /    
+< |/| | |   
+< | * | |   779ff54 [2018-07-30 17:41:24 +0800] -heyangya Merge branch 'merge' into hotfix_register # Conflicts:
+---
+> | * \ \   779ff54 [2018-07-30 17:41:24 +0800] -heyangya Merge branch 'merge' into hotfix_register # Conflicts:
+176,190c209,226
+< * | | |   62a44a9 [2018-07-30 02:45:22 +0000] -曾智 Merge pull request #23 in MAR/user-service from dev to master * commit 'ca00c78dad8028516ad294f1b34932167afae9bb':
+< |\ \ \ \    修复会员分配BUG
+< | | | | |   
+< * \ \ \ \   d9055be [2018-07-28 09:40:52 +0000] -徐学 Merge pull request #22 in MAR/user-service from dev to master * commit '09ece8b8c741bd345d0963d0a71517c0e8a6df54':
+< |\ \ \ \ \    新增:新增erp上传后业务库入库的异常结果通过rocketmq传给erp同步程序。增加tenantId,tenantAppId.
+< | | | | | |   新增:新增erp上传后业务库入库的异常结果通过rocketmq传给erp同步程序。
+< | | | | | |   
+< | | | * | | da0448e [2018-07-30 17:08:10 +0800] -heyangya 修复注册问题   
+< | | | | | * 44fb1c6 [2018-07-30 15:32:21 +0800] -autumn sql优化   
+< | | | | |/  
+< | | | | * 6ae3ed8 [2018-07-30 11:35:51 +0800] -autumn 增加手机号模糊搜索   
+< | | | |/  
+< | | |/|   
+< | | * | ca00c78 [2018-07-30 10:42:21 +0800] -autumn 修复会员分配BUG   
+< | |/ /  
+---
+> | * | | da0448e [2018-07-30 17:08:10 +0800] -heyangya 修复注册问题   
+> | | | * 44fb1c6 [2018-07-30 15:32:21 +0800] -autumn sql优化   
+> | | * | ba4b4f8 [2018-07-30 18:01:51 +0800] -xuxueyi 修改:erp增加saveorupdate   
+> | | * |   5cd352c [2018-07-30 14:25:27 +0800] -xuxueyi Merge branches 'dev' and 'master' of http://bit.sjfx.com.cn/scm/mar/user-service   
+> | | |\ \  
+> | |/ / /  
+> |/| | /   
+> | | |/    
+> | | * 6ae3ed8 [2018-07-30 11:35:51 +0800] -autumn 增加手机号模糊搜索   
+> * | |   62a44a9 [2018-07-30 02:45:22 +0000] -曾智 Merge pull request #23 in MAR/user-service from dev to master * commit 'ca00c78dad8028516ad294f1b34932167afae9bb':
+> |\ \ \    修复会员分配BUG
+> | | |/    
+> | |/|   
+> | * | ca00c78 [2018-07-30 10:42:21 +0800] -autumn 修复会员分配BUG   
+> * | |   d9055be [2018-07-28 09:40:52 +0000] -徐学 Merge pull request #22 in MAR/user-service from dev to master * commit '09ece8b8c741bd345d0963d0a71517c0e8a6df54':
+> |\ \ \    新增:新增erp上传后业务库入库的异常结果通过rocketmq传给erp同步程序。增加tenantId,tenantAppId.
+> | |/ /    新增:新增erp上传后业务库入库的异常结果通过rocketmq传给erp同步程序。
+> | | |     
+313c349
+< | * | | | e667269 [2018-07-27 11:44:17 +0800] -heyangya 修改积分同步   (origin/hotfix_sync) 
+---
+> | * | | | e667269 [2018-07-27 11:44:17 +0800] -heyangya 修改积分同步   
+385c421
+< * | 7f95fdd [2018-07-25 14:27:58 +0800] -heyangya 修改注册时没有保存用户信息的问题   (origin/hotfix_tenant_register) 
+---
+> * | 7f95fdd [2018-07-25 14:27:58 +0800] -heyangya 修改注册时没有保存用户信息的问题   

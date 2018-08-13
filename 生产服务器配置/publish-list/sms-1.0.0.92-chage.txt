@@ -1,0 +1,10 @@
+1c1,7
+< * 2d0325b [2018-07-14 21:19:08 +0800] -heyangya 删除无用配置   (HEAD, origin/master) 
+---
+> * aee49d0 [2018-07-20 19:37:04 +0800] -heyangya 修改支持配置中心   (HEAD, origin/master, origin/dev) 
+> *   31ac088 [2018-07-20 17:59:21 +0800] -heyangya save   
+> |\  
+> | * 01d278e [2018-07-20 09:29:44 +0800] -xuxueyi 2018/07/13短信需求更改，签名默认使用平台签名"世纪福星",可以在application.properties。sms.default.signaname设置。短信模板初始化脚本。   
+> * | 8ae66ad [2018-07-20 17:57:22 +0800] -heyangya rm idea   
+> |/  
+> * 2d0325b [2018-07-14 21:19:08 +0800] -heyangya 删除无用配置   

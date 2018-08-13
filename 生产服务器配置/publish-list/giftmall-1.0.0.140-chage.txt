@@ -1,0 +1,26 @@
+1,2c1,2
+< *   d7906cb [2018-07-28 09:44:24 +0000] -曾智 Merge pull request #14 in MAR/giftmall from dev to master * commit '6c5af1ecd4b90ff684a3c237b8deb5b0fd8721ac':
+< |\    测试自动构建
+---
+> *   88a09ab [2018-07-31 02:38:38 +0000] -曾智 Merge pull request #18 in MAR/giftmall from dev to master * commit '97de886c1af8c517c128f182443a2c983adccacf':
+> |\    商品按添加倒序排序
+4c4,20
+< | * 6c5af1e [2018-07-28 17:43:23 +0800] -zengzhi 测试自动构建   (origin/dev) 
+---
+> | * 97de886 [2018-07-31 10:38:12 +0800] -zengzhi 商品按添加倒序排序   (origin/dev) 
+> * |   2189813 [2018-07-30 09:00:01 +0000] -曾智 Merge pull request #17 in MAR/giftmall from dev to master * commit '645ddd155875c37f400d4311a018435ab10de522':
+> |\ \    测试自动构建
+> | |/    
+> | * 645ddd1 [2018-07-30 16:57:30 +0800] -zengzhi 测试自动构建   
+> * |   cfd43bb [2018-07-30 08:31:45 +0000] -曾智 Merge pull request #16 in MAR/giftmall from dev to master * commit '82520f0fcbd0f813a07e8b86bb8a54c290f2668b':
+> |\ \    修复是否异业管理员bug
+> | |/    
+> | * 82520f0 [2018-07-30 16:30:36 +0800] -zengzhi 修复是否异业管理员bug   
+> * |   2534589 [2018-07-30 08:02:14 +0000] -曾智 Merge pull request #15 in MAR/giftmall from dev to master * commit '92e37da93e806a5d8a9f375e056e6c5401e184ed':
+> |\ \    修改异业商家设置bug
+> | |/    
+> | * 92e37da [2018-07-30 16:00:03 +0800] -zengzhi 修改异业商家设置bug   
+> * |   d7906cb [2018-07-28 09:44:24 +0000] -曾智 Merge pull request #14 in MAR/giftmall from dev to master * commit '6c5af1ecd4b90ff684a3c237b8deb5b0fd8721ac':
+> |\ \    测试自动构建
+> | |/    
+> | * 6c5af1e [2018-07-28 17:43:23 +0800] -zengzhi 测试自动构建   

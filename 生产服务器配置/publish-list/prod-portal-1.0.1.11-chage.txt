@@ -1,0 +1,12 @@
+liuxueliang 服务号参数图片显示   (HEAD, origin/master) 
+qq27375 会员卡背景允许自定义宽度
+李灿 需改全局css。上传图片组件样式
+liuxueliang 修复门店提示语错误问题
+liuxueliang 服务号参数图片显示
+qq27375 会员卡背景允许自定义宽度
+killertao 添加账户placholder修改   
+killertao 二维码修改   
+killertao 批量下载二维码添加图片后缀   
+killertao 批量下载二维码添加图片后缀 2.领券中心小修改   
+killertao 1.员工，会员 添加二维码得下载 2.优化员工任务得代码   
+qq27375 修复用户手机号码改变，userid不变的bug

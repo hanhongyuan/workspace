@@ -1,0 +1,29 @@
+0a1,22
+> *   8f6046a [2018-08-04 10:45:40 +0000] -徐学 Merge pull request #12 in MAR/erp_to_platform from test to master * commit '8f42084b405c2b569bcfa41fc8c3bf20f5446303':
+> |\    修改:intelgral由于积分处理逻辑里只有新增，以致于线下上传积分冲红单时的冲红操作实际不处理。现修改冲红也是为新增记录。
+> | |   修改:erp-to-platform销售单冲洪处理。
+> | |   (HEAD, origin/master) 
+> | *   8f42084 [2018-08-04 10:38:19 +0000] -徐学 Merge pull request #11 in MAR/erp_to_platform from dev to test * commit '7193f396bcf1b003a900f5745c0790ae584bfe62':
+> | |\    修改:intelgral由于积分处理逻辑里只有新增，以致于线下上传积分冲红单时的冲红操作实际不处理。现修改冲红也是为新增记录。
+> | | |   (origin/test) 
+> | | * 7193f39 [2018-08-04 18:35:37 +0800] -xuxueyi 修改:intelgral由于积分处理逻辑里只有新增，以致于线下上传积分冲红单时的冲红操作实际不处理。现修改冲红也是为新增记录。   (origin/dev) 
+> | |/  
+> | *   176de71 [2018-08-04 09:16:22 +0000] -曾智 Merge pull request #10 in MAR/erp_to_platform from dev to test * commit 'b9cbb639cc728bd4635a2f66fc391f7c79f896d7':
+> | |\    修改:erp-to-platform销售单冲洪处理。
+> | | |   build.gradle edited online with Bitbucket
+> | | |   
+> | | * b9cbb63 [2018-08-04 17:14:35 +0800] -xuxueyi 修改:erp-to-platform销售单冲洪处理。   
+> | |/  
+> |/|   
+> * |   7bccea5 [2018-08-04 08:46:15 +0000] -曾智 Merge pull request #9 in MAR/erp_to_platform from zengzhi/buildgradle-1533372397604 to master * commit '3d3e20d1913bf210b43dc6c6c68864f3c6c5cf11':
+> |\ \    build.gradle edited online with Bitbucket
+> | |/    
+> |/|   
+> | * 3d3e20d [2018-08-04 08:46:07 +0000] -曾智 build.gradle edited online with Bitbucket   
+> |/  
+4,5c26,27
+< | |   (HEAD, origin/master) 
+< | * fb16d1c [2018-08-04 10:01:27 +0800] -xuxueyi 修改:应产品和ERP的要求去掉手机号11位校验。   (origin/dev) 
+---
+> | |   
+> | * fb16d1c [2018-08-04 10:01:27 +0800] -xuxueyi 修改:应产品和ERP的要求去掉手机号11位校验。   

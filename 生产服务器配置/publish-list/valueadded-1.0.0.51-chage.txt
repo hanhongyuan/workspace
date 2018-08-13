@@ -1,0 +1,18 @@
+1,4c1,2
+< *   8e9bd4d [2018-08-03 09:50:11 +0000] -曾智 Merge pull request #4 in MAR/valueadded from dev to master * commit 'd3b1f3ebd0880561c9d158199def7486797c64f6':
+< |\    增值单列表，按时间倒序排列
+< | |   修改增值金数据类型Long->BigDecial
+< | |   修改增值金数据类型Long->BigDecial
+---
+> *   14c20ec [2018-08-04 03:19:20 +0000] -曾智 Merge pull request #5 in MAR/valueadded from dev to master * commit '83d75d1093e5933348ffcd943ef389fb6e492284':
+> |\    增值计划调度任务修改
+6c4,10
+< | * d3b1f3e [2018-08-03 17:43:44 +0800] -autumn 增值单列表，按时间倒序排列   (origin/dev) 
+---
+> | * 83d75d1 [2018-08-04 10:01:05 +0800] -autumn 增值计划调度任务修改   (origin/dev) 
+> * |   8e9bd4d [2018-08-03 09:50:11 +0000] -曾智 Merge pull request #4 in MAR/valueadded from dev to master * commit 'd3b1f3ebd0880561c9d158199def7486797c64f6':
+> |\ \    增值单列表，按时间倒序排列
+> | |/    修改增值金数据类型Long->BigDecial
+> | |     修改增值金数据类型Long->BigDecial
+> | |     
+> | * d3b1f3e [2018-08-03 17:43:44 +0800] -autumn 增值单列表，按时间倒序排列   
