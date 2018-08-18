@@ -30,7 +30,7 @@ docker logout  47.99.32.21
 
 docker rmi 47.99.32.21/sjfx/sjfxtest:1.0.4
 
-sh /opt/publish-script/publish.service.create.sh sjfxtest 1.0.4 17777
+sh /opt/publish-script/publish.service.create.sh sjfxtest 1.0.8 17777
 
 docker service update --image 47.99.32.21/sjfx/sjfxtest:1.0.8 sjfxtest
 
@@ -44,10 +44,23 @@ sh /opt/publish-script/publish.service.testcreate.sh id-generator 1.1.0.2 16000,
 
 未知
 
-
+sh /opt/publish-script/publish.service.testcreate.sh gateway 1.1.0.2 8000
+sh /opt/publish-script/publish.service.testcreate.sh id-generator 1.1.0.2 16000,16001
+sh /opt/publish-script/publish.service.testcreate.sh authorization 1.1.0.4 20000,20001
+sh /opt/publish-script/publish.service.testcreate.sh user 1.1.0.11 20020,20021
 
 
 不可
 sh /opt/publish-script/publish.service.testcreate.sh giftmall 1.1.0.5 20080,20081
+
+
+
+正式：
+
+sh /opt/publish-script/deploy-prod-app-service.sh valueadded 20172,20173 1g
+
+sh /opt/publish-script/deploy-prod-app-service.sh qrcode 20262,20263 512m
+
+sh /opt/publish-script/deploy-prod-app-service.sh warranty 20122,20123 1g 
 
 

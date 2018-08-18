@@ -37,6 +37,15 @@ acme.sh --issue --dns dns_ali -d yun.sjfx.com.cn -d dockerhub.sjfx.com.cn
 
 acme.sh --issue --dns dns_ali -d dockerhub.sjfx.com.cn
 
+acme.sh --issue --dns dns_ali -d v3release.sjfx.com.cn
+
+acme.sh --issue --dns dns_ali -d v3dev.sjfx.com.cn
+
+acme.sh --issue --dns dns_ali -d v3test.sjfx.com.cn
+
+acme.sh --issue --dns dns_ali -d produce301.sjfx.com.cn
+
+
 这里给出的 配置会被自动记录下来, 将来你在使用的时候, 就不需要再次指定了. 直接生成就好了:
 
  重新生成使用：
@@ -68,6 +77,10 @@ acme.sh  --installcert  -d  yun.sjfx.com.cn -d dockerhub.sjfx.com.cn  \
  acme.sh  --installcert -d face.sjfx.com.cn  \
  --key-file   /etc/nginx/ssl/face.key \
  --fullchain-file /etc/nginx/ssl/face.cer
+
+ acme.sh  --installcert -d produce301.sjfx.com.cn  \
+ --key-file   /opt/sslkey/produce301.key \
+ --fullchain-file  /opt/sslkey/produce301.cer
 
 
 更新你的nginx配置
