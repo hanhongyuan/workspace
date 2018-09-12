@@ -94,4 +94,9 @@ firewall-cmd --zone=public --add-port=8422/tcp --permanent
 firewall-cmd --zone=public --add-port=21/tcp
 firewall-cmd --zone=public --add-port=21/tcp --permanent
 
+firewall-cmd --zone=public --add-port=22/tcp
+firewall-cmd --zone=public --add-port=22/tcp --permanent
+
 firewall-cmd --zone=public --add-port=5010/tcp
+
+firewall-cmd --zone=public --add-port=12432/tcp

@@ -53,3 +53,5 @@ docker service create --replicas 1 \
 
 使用 docker service update 升级
 使用 docker service rollback 回滚
+
+docker service update --restart-delay 0 serviceName 刷新配置
