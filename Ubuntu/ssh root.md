@@ -25,7 +25,7 @@ sudo service ssh restart
 ```
 
 2. 禁用cdrom更新源，更新
-vim /etc/apt/sources.list
+sudo vim /etc/apt/sources.list
 # deb cdrom:[Ubuntu-Server 16.04.4 LTS _Xenial Xerus_ - Release amd64 (20180228)]/ xenial main restricted
 
 sudo apt-get update -y
@@ -66,20 +66,22 @@ sudo systemctl restart networking.service
     apt-transport-https \
     ca-certificates \
     curl \
-    software-properties-common -y
+    software-properties-common
 
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - apt-key fingerprint 0EBFCD88
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-     add-apt-repository \
-    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-    $(lsb_release -cs) \
-    stable"
+    sudo apt-key fingerprint 0EBFCD88
+
+    sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
 
     apt-get update -y
 
     apt-cache madison docker-ce
 
-    apt-get install docker-ce=17.03.2~ce-0~ubuntu-xenial -y
+    apt-get install docker-ce=18.03.1~ce-0~ubuntu -y
 
     sudo systemctl start docker.service
     sudo systemctl enable docker.service
@@ -94,7 +96,8 @@ sudo systemctl restart networking.service
 "insecure-registries": [],
 "debug": true,
 "experimental": true,
-"live-restore": false
+"live-restore": false,
+"max-concurrent-downloads": 20
 }
 EOF
 sudo systemctl restart docker

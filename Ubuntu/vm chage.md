@@ -167,8 +167,8 @@ update mysql.user set authentication_string=password('7KY7HWZpgAtSAhU5') where u
 
 
 
-
-echo 'sjfx-test' > /etc/hostname
+16.04版
+echo 'sjfx-dev-2' > /etc/hostname
 cat > /etc/network/interfaces << EOF
 # This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
@@ -182,12 +182,35 @@ iface lo inet loopback
 # The primary network interface
 auto ens33
 iface ens33 inet static
-address 192.168.181.191
+address 192.168.1.11
 netmask 255.255.255.0
-gateway 192.168.181.2
-dns-nameservers 192.168.181.2
+gateway 192.168.1.1
+dns-nameservers 192.168.1.1
 EOF
 reboot
 sudo ip addr flush ens33
 sudo systemctl restart networking.service
 reboot
+
+18.04版
+echo 'kube-node1' > /etc/hostname
+cat > /etc/netplan/50-cloud-init.yaml << EOF
+# This file is generated from information provided by
+# the datasource.  Changes to it will not persist across an instance.
+# To disable cloud-init's network configuration capabilities, write a file
+# /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg with the following:
+# network: {config: disabled}
+network:
+    ethernets:
+        ens33:
+            addresses: [192.168.181.200/24]
+            gateway4:  192.168.181.2
+            dhcp4: no
+            nameservers:
+                addresses: [192.168.181.2]
+    version: 2
+
+EOF
+reboot
+netplan apply
+

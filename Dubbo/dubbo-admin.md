@@ -37,6 +37,8 @@ docker run -d -p 8084:8084 -p 7070:7070 --name dubbomonitor  fireicewater/dubbo-
 
 docker run -d -p 8084:8084 -p 7070:7070 --name dubbomonitor  fireicewater/dubbo-monitor dubbo.registry.address=zookeeper://192.168.1.23:15301
 
+docker run -d -p 8084:8084 -p 7070:7070 --name dubbomonitor  fireicewater/dubbo-monitor dubbo.registry.address=zookeeper://172.16.84.200:15300
+
 docker run -v /var/run/docker.sock:/var/run/docker.sock \
    centurylink/dockerfile-from-image fireicewater/dubbo-monitor
 
@@ -48,3 +50,8 @@ sed "s/\(.*\)/docker inspect \1 | \
 jq -r \'.[0].ContainerConfig.Cmd[2] | tostring\'/" | \
 sh | \
 sed 's/^#(nop) //'
+
+docker run -d -p 9001:8080 --restart=unless-stopped \
+-e ZOOKEEPER_SERVER=172.16.84.200:15300 \
+-m 1024M --name dubboadmin \
+webuilder/dubboadmin
