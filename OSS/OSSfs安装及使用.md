@@ -33,21 +33,25 @@ ossfs --version
 echo my-bucket:my-access-key-id:my-access-key-secret > /etc/passwd-ossfs
 chmod 640 /etc/passwd-ossfs
 
-echo sjfx-backup:敏感数据  > /etc/passwd-ossfs
+echo sjfx-backup2008:LTAIReMbSJZq8jL3:lV1bM3EHIFRD3UoDuhOAJ89T4TcQfb > /etc/passwd-ossfs
 chmod 640 /etc/passwd-ossfs
+
 640 代表所有者有读写权限但无执行权限所有者所在的组的组成员只有写权限其他人没有权限
 
 3. 挂载到本地目录
 
 mkdir -p /ossfsbackup/
 
+mkdir -p /opt/ossfsbackup/
+
 ossfs bucket名称 挂载目录 -ourl=入口点
 入口点在控制台概览界面查看，见 1.png
 公网
 ossfs sjfx-backup /ossfsbackup/ -ourl=http://oss-cn-beijing.aliyuncs.com
+ossfs sjfx-backup2008 /ossfsbackup/ -ourl=http://oss-cn-beijing.aliyuncs.com
 内网
-ossfs sjfx-backup2008 /ossfsbackup/ -ourl=http://oss-cn-beijing-internal.aliyuncs.com
-
+ossfs sjfx-backup2008 /opt/ossfsbackup/ -ourl=http://oss-cn-beijing.aliyuncs.com
+oss-cn-beijing.aliyuncs.com
 取消挂载
 umount /ossfsbackup/ # root user
 fusermount -u /ossfsbackup/ # non-root user 
@@ -96,3 +100,8 @@ sh /mnt/backuptosso.sh > /tmp/backuptosso.log 2>&1
 tar cjf - /mnt/www/upfiles |split -b 512m - backstart.tar.bz2.
 解压
 cat backstart.tar.bz2.* | tar xj
+
+
+cp -r /opt/codebackup/ /opt/ossfsbackup/v3codeback/
+
+cp /opt/dbback/ -r /opt/ossfsbackup/v3dbbacknew/
