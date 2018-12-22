@@ -33,7 +33,7 @@ ossfs --version
 echo my-bucket:my-access-key-id:my-access-key-secret > /etc/passwd-ossfs
 chmod 640 /etc/passwd-ossfs
 
-echo sjfx-backup2008:LTAIReMbSJZq8jL3:lV1bM3EHIFRD3UoDuhOAJ89T4TcQfb > /etc/passwd-ossfs
+echo sjfx-backup2008: > /etc/passwd-ossfs
 chmod 640 /etc/passwd-ossfs
 
 640 代表所有者有读写权限但无执行权限所有者所在的组的组成员只有写权限其他人没有权限
