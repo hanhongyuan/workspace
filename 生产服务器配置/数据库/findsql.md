@@ -1,0 +1,1 @@
+find  /sjfx-sql/ |grep 2018082
