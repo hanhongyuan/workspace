@@ -1,0 +1,28 @@
+version: '2'
+
+services:
+
+  redis_master:
+    build:
+      context: master/
+    volumes:
+      - ./master/data:/data
+      - ./master/redis.conf:/usr/local/etc/redis/redis.conf
+    ports:
+      - "16301:16301"
+    restart: unless-stopped
+    network_mode: "host"
+
+  redis_sentinel:
+    build:
+      context: sentinel/
+    volumes:
+      - ./sentinel/data:/data
+      - ./sentinel/sentinel.conf:/usr/local/etc/redis/sentinel.conf
+    ports:
+      - "16310:16310"
+    restart: unless-stopped
+    network_mode: "host"
+    depends_on:
+      - redis_master
+

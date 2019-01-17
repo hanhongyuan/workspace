@@ -42,7 +42,7 @@ docker run -p 6379:6379 --restart=unless-stopped -v /mnt/redis/data:/data -v /mn
 mkdir -p /mnt/redis/data
 chmod 777 -R /mnt/redis
 
-docker run -p 16300:6379 --restart=unless-stopped -v /mnt/redis/data:/data -v /mnt/redis/redis.conf:/usr/local/etc/redis/redis.conf -d redis:4.0.9
+docker run -p 16300:6379 --restart=unless-stopped -v /opt/redis/data:/data -v /opt/redis/redis.conf:/usr/local/etc/redis/redis.conf -d redis:4.0.9
 
 
 

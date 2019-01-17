@@ -34,6 +34,7 @@ echo my-bucket:my-access-key-id:my-access-key-secret > /etc/passwd-ossfs
 chmod 640 /etc/passwd-ossfs
 
 echo sjfx-backup2008: > /etc/passwd-ossfs
+echo sjfx-v3back:LTAIReMbSJZq8jL3:lV1bM3EHIFRD3UoDuhOAJ89T4TcQfb >> /etc/passwd-ossfs
 chmod 640 /etc/passwd-ossfs
 
 640 代表所有者有读写权限但无执行权限所有者所在的组的组成员只有写权限其他人没有权限
@@ -43,17 +44,22 @@ chmod 640 /etc/passwd-ossfs
 mkdir -p /ossfsbackup/
 
 mkdir -p /opt/ossfsbackup/
-
+mkdir -p /opt/v3backup/
 ossfs bucket名称 挂载目录 -ourl=入口点
 入口点在控制台概览界面查看，见 1.png
 公网
 ossfs sjfx-backup /ossfsbackup/ -ourl=http://oss-cn-beijing.aliyuncs.com
 ossfs sjfx-backup2008 /ossfsbackup/ -ourl=http://oss-cn-beijing.aliyuncs.com
+ossfs sjfx-v3-elkback /elkbakdata/ -ourl=oss-cn-hangzhou-internal.aliyuncs.com -o allow_other
+ossfs sjfx-v3back /opt/v3backup/ -ourl=oss-cn-hangzhou-internal.aliyuncs.com -o allow_other
+oss://sjfx-v3back/
 内网
 ossfs sjfx-backup2008 /opt/ossfsbackup/ -ourl=http://oss-cn-beijing.aliyuncs.com
 oss-cn-beijing.aliyuncs.com
 取消挂载
 umount /ossfsbackup/ # root user
+umount /opt/ossfsbackup/
+umount /elkbakdata/
 fusermount -u /ossfsbackup/ # non-root user 
 4. 编辑脚本
 export PATH=$PATH:/usr/locak/bin/ #导出执行
