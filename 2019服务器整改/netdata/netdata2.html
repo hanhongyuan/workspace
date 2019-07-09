@@ -1,0 +1,159 @@
+<html>
+
+<head>
+    <title>服务器基本情况监控</title>
+</head>
+
+<body>
+    <div>
+        <a href="index.html">首页</a>
+        <a href="netdata1.html">支撑服务器</a>
+        <a href="netdata2.html">基础服务服务器</a>
+        <a href="netdata3.html">业务服务服务器</a>
+        <a href="netdata.html">所有服务器</a>
+    </div>
+    <div>
+        <fieldset>业务服务 eureka</fieldset>
+        <span style='display:inline-block'>
+            <h3>v3-base-eureka001&nbsp;&nbsp;<a href='http://47.110.137.241:17123' target='_blank'>查看详情</a></h3>
+            <ul>
+                <li>
+                    <p>cpu使用率</p>
+                    <embed
+                        src='http://47.110.137.241:17123/api/v1/badge.svg?chart=system.cpu&alarm=10min_cpu_usage&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+                <li>
+                    <p>mem使用率</p>
+                    <embed
+                        src='http://47.110.137.241:17123/api/v1/badge.svg?chart=system.ram&alarm=ram_in_use&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+                <li>
+                    <p>hd使用率</p>
+                    <embed
+                        src='http://47.110.137.241:17123/api/v1/badge.svg?chart=disk_space._&alarm=disk_space_usage&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+            </ul>
+        </span>
+        <span style='display:inline-block'>
+            <h3>v3-base-eureka002&nbsp;&nbsp;<a href='http://114.55.171.107:17123' target='_blank'>查看详情</a></h3>
+            <ul>
+                <li>
+                    <p>cpu使用率</p>
+                    <embed
+                        src='http://114.55.171.107:17123/api/v1/badge.svg?chart=system.cpu&alarm=10min_cpu_usage&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+                <li>
+                    <p>mem使用率</p>
+                    <embed
+                        src='http://114.55.171.107:17123/api/v1/badge.svg?chart=system.ram&alarm=ram_in_use&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+                <li>
+                    <p>hd使用率</p>
+                    <embed
+                        src='http://114.55.171.107:17123/api/v1/badge.svg?chart=disk_space._&alarm=disk_space_usage&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+            </ul>
+        </span>
+    </div>
+    <div>
+        <fieldset>业务服务 gateway</fieldset>
+        <span style='display:inline-block'>
+            <h3>v3-gateway001&nbsp;&nbsp;<a href='http://47.111.11.230:17123' target='_blank'>查看详情</a></h3>
+            <ul>
+                <li>
+                    <p>cpu使用率</p>
+                    <embed
+                        src='http://47.111.11.230:17123/api/v1/badge.svg?chart=system.cpu&alarm=10min_cpu_usage&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+                <li>
+                    <p>mem使用率</p>
+                    <embed
+                        src='http://47.111.11.230:17123/api/v1/badge.svg?chart=system.ram&alarm=ram_in_use&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+                <li>
+                    <p>hd使用率</p>
+                    <embed
+                        src='http://47.111.11.230:17123/api/v1/badge.svg?chart=disk_space._&alarm=disk_space_usage&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+            </ul>
+        </span>
+        <span style='display:inline-block'>
+            <h3>v3-gateway002&nbsp;&nbsp;<a href='http://47.110.14.10:17123' target='_blank'>查看详情</a></h3>
+            <ul>
+                <li>
+                    <p>cpu使用率</p>
+                    <embed
+                        src='http://47.110.14.10:17123/api/v1/badge.svg?chart=system.cpu&alarm=10min_cpu_usage&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+                <li>
+                    <p>mem使用率</p>
+                    <embed src='http://47.110.14.10:17123/api/v1/badge.svg?chart=system.ram&alarm=ram_in_use&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+                <li>
+                    <p>hd使用率</p>
+                    <embed
+                        src='http://47.110.14.10:17123/api/v1/badge.svg?chart=disk_space._&alarm=disk_space_usage&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+            </ul>
+        </span>
+        <span style='display:inline-block'>
+            <h3>v3-gateway003&nbsp;&nbsp;<a href='http://47.110.12.94:17123' target='_blank'>查看详情</a></h3>
+            <ul>
+                <li>
+                    <p>cpu使用率</p>
+                    <embed
+                        src='http://47.110.12.94:17123/api/v1/badge.svg?chart=system.cpu&alarm=10min_cpu_usage&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+                <li>
+                    <p>mem使用率</p>
+                    <embed src='http://47.110.12.94:17123/api/v1/badge.svg?chart=system.ram&alarm=ram_in_use&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+                <li>
+                    <p>hd使用率</p>
+                    <embed
+                        src='http://47.110.12.94:17123/api/v1/badge.svg?chart=disk_space._&alarm=disk_space_usage&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+            </ul>
+        </span>
+        <span style='display:inline-block'>
+            <h3>v3-gateway004&nbsp;&nbsp;<a href='http://114.55.169.175:17123' target='_blank'>查看详情</a></h3>
+            <ul>
+                <li>
+                    <p>cpu使用率</p>
+                    <embed
+                        src='http://114.55.169.175:17123/api/v1/badge.svg?chart=system.cpu&alarm=10min_cpu_usage&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+                <li>
+                    <p>mem使用率</p>
+                    <embed
+                        src='http://114.55.169.175:17123/api/v1/badge.svg?chart=system.ram&alarm=ram_in_use&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+                <li>
+                    <p>hd使用率</p>
+                    <embed
+                        src='http://114.55.169.175:17123/api/v1/badge.svg?chart=disk_space._&alarm=disk_space_usage&refresh=10'
+                        type='image/svg+xml' height='20' />
+                </li>
+            </ul>
+        </span>
+    </div>
+</body>
+
+</html>

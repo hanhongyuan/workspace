@@ -18,7 +18,7 @@ iface lo inet loopback
 # The primary network interface
 auto ens33
 iface ens33 inet static
-address 192.168.1.12
+address 192.168.1.208
 netmask 255.255.255.0
 gateway 192.168.1.1
 dns-nameservers 192.168.1.1
@@ -27,7 +27,8 @@ EOF
 sudo ip addr flush ens33
 sudo systemctl restart networking.service
 
-echo 'sjfx-test' > /etc/hostname
+echo 'sjfxtest11' > /etc/hostname
+
 cat > /etc/network/interfaces << EOF
 # This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
@@ -41,11 +42,12 @@ iface lo inet loopback
 # The primary network interface
 auto ens33
 iface ens33 inet static
-address 192.168.1.23
+address 192.168.1.11
 netmask 255.255.255.0
 gateway 192.168.1.1
 dns-nameservers 192.168.1.1
 EOF
+sudo reboot
 
 sudo ip addr flush ens33
 sudo systemctl restart networking.service
@@ -57,6 +59,10 @@ apt-get install python-software-properties -y
 
 add-apt-repository ppa:webupd8team/java
 
+sudo add-apt-repository ppa:nilarimogard/webupd8
+sudo apt-get update
+sudo apt-get install launchpad-getkeys
+
 apt-get install oracle-java8-installer -y
 java -version
 
@@ -67,7 +73,7 @@ mvn -v
 3.2 gradle
 wget https://services.gradle.org/distributions/gradle-4.9-bin.zip
 unzip -d /opt/gradle gradle-4.9-bin.zip
-ls /opt/gradle/gradle-4.8
+ls /opt/gradle/gradle-4.9
 
 cat >> /etc/profile << EOF
 
@@ -111,7 +117,7 @@ sh -c 'echo deb http://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.l
 apt-get update -y
 apt-get install jenkins -y
 
-
+mkdir -p /var/lib/jenkins/.gradle/
 cat > /var/lib/jenkins/.gradle/init.gradle << EOF
 allprojects{
     repositories {

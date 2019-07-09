@@ -52,3 +52,6 @@ docker run -d --name rocketmq-console-dev --network 420incubating_default --link
 docker run -d --name rocketmq-console-test --network 420incubatingtest_default --link namesrvtest:namesrvtest  -e "JAVA_OPTS=-Drocketmq.namesrv.addr=namesrvtest:9876 -Dcom.rocketmq.sendMessageWithVIPChannel=false" -p 9012:8080 -t styletang/rocketmq-console-ng 
 
 docker run -d --name rocketmq-console-test --network 420incubating_default --link rmqnamesrv:rmqnamesrv  -e "JAVA_OPTS=-Drocketmq.namesrv.addr=rmqnamesrv:9876 -Dcom.rocketmq.sendMessageWithVIPChannel=false" -p 9011:8080 -t styletang/rocketmq-console-ng
+
+
+docker run -d --name rocketmq-console  -e "JAVA_OPTS=-Drocketmq.namesrv.addr=192.168.1.174:9876 -Dcom.rocketmq.sendMessageWithVIPChannel=false" -p 9011:8080 -t styletang/rocketmq-console-ng

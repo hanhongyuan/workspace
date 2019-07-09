@@ -27,7 +27,8 @@ docker run -d -p 9000:8080 --restart=unless-stopped -e ZOOKEEPER_SERVER=192.168.
 
 docker run -d -p 9000:8080 --restart=unless-stopped -e ZOOKEEPER_SERVER=192.168.1.14:15301 --name dubboadmin webuilder/dubboadmin
 
-docker run -d -p 9000:8080 --restart=unless-stopped -e ZOOKEEPER_SERVER=192.168.1.11:15301 --name dubboadmin webuilder/dubboadmin
+docker rm -f dubboadmin
+docker run -d -p 9001:8080 --restart=unless-stopped -e ZOOKEEPER_SERVER=v3zookeeper001.sjfx.com.cn:15300 --name dubboadmin webuilder/dubboadmin
 
 
 docker run -d -p 9001:8080 --restart=unless-stopped -e ZOOKEEPER_SERVER=172.16.84.200:15300 --name dubboadmin webuilder/dubboadmin

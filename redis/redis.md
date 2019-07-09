@@ -14,8 +14,7 @@
 5.  将配置文件复制到 redis 目录下
 
 6.  运行镜像
-    docker rm -f redis
-    docker run -p 16300:6379 --name redis --restart=unless-stopped -v /opt/redis/data:/data -v  /opt/redis/redis.conf:/usr/local/etc/redis/redis.conf -d redis:4.0.9 redis-server /usr/local/etc/redis/redis.conf --appendonly yes
+    docker run -p 16300:16300 --name redis --restart=unless-stopped -v /opt/redis/data:/data -v  /opt/redis/redis.conf:/usr/local/etc/redis/redis.conf -d redis:4.0.9 redis-server /usr/local/etc/redis/redis.conf --appendonly yes
 
     docker rm -f sjfxredis
     docker run -p 16300:16300 --name sjfxredis --restart=unless-stopped -v /opt/redis/data:/data -v  /opt/redis/redis.conf:/usr/local/etc/redis/redis.conf -d redis:4.0.9 redis-server /usr/local/etc/redis/redis.conf --appendonly yes
@@ -39,10 +38,14 @@ chmod 777 -R /mnt/redis
 docker run -p 6379:6379 --restart=unless-stopped -v /mnt/redis/data:/data -v /mnt/redis/redis.conf:/usr/local/etc/redis/redis.conf -d redis:4.0.9
 
 
-mkdir -p /mnt/redis/data
-chmod 777 -R /mnt/redis
+docker rm -f sjfxredis
+    docker run -p 16300:16300 --name sjfxredis --restart=unless-stopped -v /opt/redis/data:/data -v  /opt/redis/redis.conf:/usr/local/etc/redis/redis.conf -d redis:4.0.9 redis-server /usr/local/etc/redis/redis.conf --appendonly yes
 
-docker run -p 16300:6379 --restart=unless-stopped -v /opt/redis/data:/data -v /opt/redis/redis.conf:/usr/local/etc/redis/redis.conf -d redis:4.0.9
+mkdir -p /opt/redis/data
+chmod 777 -R /opt/redis
+
+docker rm sjfxredis
+docker run -p 16300:6379 --restart=unless-stopped --name sjfxredis -v /opt/redis/data:/data -v /opt/redis/redis.conf:/usr/local/etc/redis/redis.conf -d redis:4.0.9
 
 
 

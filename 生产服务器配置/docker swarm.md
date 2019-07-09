@@ -5,6 +5,9 @@
  2. 在其他两台机器执行
 docker swarm join --token SWMTKN-1-3iifvbne9ln7u3o1lftswkg5hrynf3ejlw9oma04g8e6uo2l6s-454q79xfh36h2zhupijajje1i 116.62.226.170:2377
 docker swarm join --token SWMTKN-1-00syqeatcfkpeitba93o0qdjhuqlbjezmaos3lz7xd9ulbzwnw-8ixwp6wdl1k24gc8qrbb2w6c5 116.62.226.170:2377
+
+docker swarm leave
+docker swarm join --token SWMTKN-1-016ymc3a8xfhdf2q9gbtgsqmae44f1qjxg41rri5ltxd1y9h1x-1cyi019cjc5pb8a57qn0m31ba 172.16.84.200:2377
  3. 查看集群
  docker node ls 
 

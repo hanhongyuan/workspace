@@ -11,6 +11,16 @@ sudo apt-get install vim -y
 sudo passwd root
 
 sudo vim /etc/ssh/sshd_config
+cat /etc/ssh/sshd_config
+
+cat >> /etc/ssh/sshd_config << EOF
+
+ClientAliveInterval 60
+ClientAliveCountMax 3
+
+EOF
+
+cat /etc/ssh/sshd_config
 
 change
 `PermitRootLogin prohibit-password` 

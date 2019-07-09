@@ -1,0 +1,21 @@
+SET FOREIGN_KEY_CHECKS=0;
+TRUNCATE TABLE tag_service.batch_job_execution_params;
+TRUNCATE TABLE tag_service.batch_job_execution_context;
+TRUNCATE TABLE tag_service.batch_job_execution_seq;
+TRUNCATE TABLE tag_service.batch_job_execution;
+TRUNCATE TABLE tag_service.batch_job_instance;
+TRUNCATE TABLE tag_service.batch_job_seq;
+TRUNCATE TABLE tag_service.batch_step_execution_context;
+TRUNCATE TABLE tag_service.batch_step_execution_seq;
+TRUNCATE TABLE tag_service.batch_step_execution;
+SET FOREIGN_KEY_CHECKS=1;
+
+SELECT count(*) from tag_service.batch_job_execution_params;
+SELECT count(*) from tag_service.batch_job_execution_context;
+SELECT count(*) from tag_service.batch_job_execution_seq;
+SELECT count(*) from tag_service.batch_job_execution;
+SELECT count(*) from tag_service.batch_job_instance;
+SELECT count(*) from tag_service.batch_job_seq;
+SELECT count(*) from tag_service.batch_step_execution_context;
+SELECT count(*) from tag_service.batch_step_execution_seq;
+SELECT count(*) from tag_service.batch_step_execution;

@@ -43,3 +43,6 @@ firewall-cmd --zone=public --add-port=9090/tcp --permanent
 /var/lib/mongodb/
 
 /var/lib/mongodb
+mkdir -p /dbback
+mongodump -h 127.0.0.1 -d yapi -o /dbback
+

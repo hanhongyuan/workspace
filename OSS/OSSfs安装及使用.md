@@ -35,7 +35,12 @@ chmod 640 /etc/passwd-ossfs
 
 echo sjfx-backup2008: > /etc/passwd-ossfs
 echo sjfx-v3back:LTAIReMbSJZq8jL3:lV1bM3EHIFRD3UoDuhOAJ89T4TcQfb >> /etc/passwd-ossfs
+echo sjfx-website:LTAIReMbSJZq8jL3:lV1bM3EHIFRD3UoDuhOAJ89T4TcQfb >> /etc/passwd-ossfs
 chmod 640 /etc/passwd-ossfs
+
+echo sjfx-elkback2018:LTAIReMbSJZq8jL3:lV1bM3EHIFRD3UoDuhOAJ89T4TcQfb >> /etc/passwd-ossfs
+oss://sjfx-elkback2018/
+oss://sjfx-elkback2018/
 
 640 代表所有者有读写权限但无执行权限所有者所在的组的组成员只有写权限其他人没有权限
 
@@ -45,16 +50,20 @@ mkdir -p /ossfsbackup/
 
 mkdir -p /opt/ossfsbackup/
 mkdir -p /opt/v3backup/
+mkdir -p /opt/sjfx-elkback2018
 ossfs bucket名称 挂载目录 -ourl=入口点
 入口点在控制台概览界面查看，见 1.png
 公网
 ossfs sjfx-backup /ossfsbackup/ -ourl=http://oss-cn-beijing.aliyuncs.com
-ossfs sjfx-backup2008 /ossfsbackup/ -ourl=http://oss-cn-beijing.aliyuncs.com
-ossfs sjfx-v3-elkback /elkbakdata/ -ourl=oss-cn-hangzhou-internal.aliyuncs.com -o allow_other
+ossfs sjfx-backup2008 /opt/ossfsbackup/ -ourl=oss-cn-beijing-internal.aliyuncs.com
+ossfs sjfx-backup2008 /opt/ossfsbackup/ -ourl=oss-cn-beijing.aliyuncs.com
+ossfs sjfx-elkback2018  /opt/sjfx-elkback2018/ -ourl=oss-cn-hangzhou-internal.aliyuncs.com -o allow_other
 ossfs sjfx-v3back /opt/v3backup/ -ourl=oss-cn-hangzhou-internal.aliyuncs.com -o allow_other
 oss://sjfx-v3back/
+ossfs sjfx-v3back /opt/v3backup/ -ourl=oss-cn-hangzhou.aliyuncs.com -o allow_other
 内网
-ossfs sjfx-backup2008 /opt/ossfsbackup/ -ourl=http://oss-cn-beijing.aliyuncs.com
+mkdir -p /sjfx-website/backlogs
+ossfs sjfx-website /sjfx-website/ -ourl=http://oss-cn-beijing.aliyuncs.com
 oss-cn-beijing.aliyuncs.com
 取消挂载
 umount /ossfsbackup/ # root user

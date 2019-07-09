@@ -38,16 +38,20 @@
 
        docker pull beginor/gitlab-ce:10.6.2-ce.0
 
-docker rm -f gitlab 
-        docker run \
+docker rm -f gitlab
+
+docker run \
         --detach \
         --publish 8422:22 \
         --publish 8443:443 \
         --publish 8080:80 \
         --name gitlab \
         --restart unless-stopped \
-        --volume /mnt/gitlab/etc:/etc/gitlab \
-        --volume /mnt/gitlab/log:/var/log/gitlab \
-        --volume /mnt/gitlab/data:/var/opt/gitlab \
-        beginor/gitlab-ce:10.6.4-ce.0
+        --volume /opt/gitlab/etc:/etc/gitlab \
+        --volume /opt/gitlab/log:/var/log/gitlab \
+        --volume /opt/gitlab/data:/var/opt/gitlab \
+        beginor/gitlab-ce:11.3.0-ce.0
+
+chmod 777 -R /opt/gitlab
+
 

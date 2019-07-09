@@ -32,8 +32,8 @@ chmod 777 -R /opt/nginx
 docker rm -f nginx
 docker container run \
   --name nginx \
-  -p 80:80 \
-  -v /web:/mnt \
+  -p 10801:10801 \
+  -v /web:/web \
   -v /opt/nginx:/etc/nginx \
   -v /opt/nginx/logs:/var/log/nginx \
   -d \

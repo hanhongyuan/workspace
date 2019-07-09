@@ -106,3 +106,10 @@ firewall-cmd --zone=public --add-port=12443/tcp --permanent
 
 firewall-cmd --zone=public --add-port=12444/tcp
 firewall-cmd --zone=public --add-port=12444/tcp --permanent
+
+
+firewall-cmd --zone=public --add-port=443/tcp
+firewall-cmd --zone=public --add-port=443/tcp --permanent
+
+firewall-cmd --zone=public --add-port=16300/tcp
+firewall-cmd --zone=public --add-port=16300/tcp --permanent
