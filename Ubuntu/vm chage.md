@@ -27,7 +27,7 @@ EOF
 sudo ip addr flush ens33
 sudo systemctl restart networking.service
 
-echo 'sjfxtest11' > /etc/hostname
+echo 'sjfxpublish' > /etc/hostname
 
 cat > /etc/network/interfaces << EOF
 # This file describes the network interfaces available on your system
@@ -42,7 +42,7 @@ iface lo inet loopback
 # The primary network interface
 auto ens33
 iface ens33 inet static
-address 192.168.1.11
+address 192.168.1.18
 netmask 255.255.255.0
 gateway 192.168.1.1
 dns-nameservers 192.168.1.1

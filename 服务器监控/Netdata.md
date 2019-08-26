@@ -28,4 +28,14 @@ docker run -d --name=netdata \
     --security-opt apparmor=unconfined \
     netdata/netdata
 
-
+docker rm -f netdata
+docker rmi titpetric/netdata
+docker run -d --name=netdata \
+  -p 17123:19999 \
+  -v /proc:/host/proc:ro \
+  --restart unless-stopped \
+  -v /sys:/host/sys:ro \
+  -v /var/run/docker.sock:/var/run/docker.sock:ro \
+  --cap-add SYS_PTRACE \
+  --security-opt apparmor=unconfined \
+  netdata/netdata

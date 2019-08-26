@@ -57,6 +57,10 @@ sudo docker run -e CATTLE_AGENT_IP="192.168.79.151" --rm --privileged -v /var/ru
 
 sudo docker run --rm --privileged -v /var/run/docker.sock:/var/run/docker.sock -v /var/lib/rancher:/var/lib/rancher rancher/agent:v1.2.5 http://192.168.1.109:8080/v1/scripts/9F78F0DF10BCF4216AC7:1483142400000:hSv7KrbGnhQy3IJmJWYhWvxemF4
 
+firewall-cmd  --zone=public --add-port=16800-16900/tcp
+firewall-cmd  --zone=public --add-port=16800-16900/tcp --permanent
+firewall-cmd --reload
+
 firewall-cmd --zone=public --add-port=8080/tcp
 firewall-cmd --zone=public --add-port=8080/tcp --permanent
 

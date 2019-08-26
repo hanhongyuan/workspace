@@ -1,0 +1,1 @@
+pt-online-schema-change --alter "add INDEX idx_user_login_token_app_create(tenant_wx_app_id, create_time)" h=rm-bp1qn4bl8d8p9mnm44o.mysql.rds.aliyuncs.com,P=3369,p=f7na4ZQmCcXhx5gGKsr3,u=sjfxadmin,D=authorization_service,t=user_login_token  --no-check-replication-filters  --execute
