@@ -23,3 +23,15 @@ docker pull rancher/calico-cni:v3.1.1
 docker pull rancher/coreos-etcd:v3.1.12           
 docker pull rancher/pause-amd64:3.1               
 docker pull rancher/coreos-flannel:v0.9.1            
+
+
+mkdir -p /mnt/rancher/ 
+
+docker run -d --restart=unless-stopped \
+  -p 80:80 -p 443:443 \
+  -v /mnt/rancher/:/var/lib/rancher/ \
+  -v /root/var/log/auditlog:/var/log/auditlog \
+  -e AUDIT_LEVEL=3 \
+  -v /opt/ssl/1390543__sjfx.com.cn.pem:/etc/rancher/ssl/cert.pem \
+  -v /opt/ssl/1390543__sjfx.com.cn.key:/etc/rancher/ssl/key.pem \
+  rancher/rancher:stable --no-cacerts

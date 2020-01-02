@@ -1,0 +1,10 @@
+version: "2"
+
+services:
+    go-mysql-elasticsearch:
+      #build: ./
+      image: gozer/go-mysql-elasticsearch
+      volumes:
+        - ./river.toml:/config/river.toml:ro
+        - ./data:/goelkvar
+      

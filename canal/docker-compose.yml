@@ -1,0 +1,34 @@
+version: "2"
+
+services:
+    canal-server:
+      image: canal/canal-server:v1.1.4
+      hostname: 192.168.1.12
+      environment: 
+        - canal.admin.manager=192.168.1.12:8089
+        - canal.admin.port=11110
+        - canal.admin.user=admin
+        - canal.admin.passwd=123456
+      volumes:
+        - ./server-logs:/home/admin/canal-server/logs
+      network_mode: host
+      ports: 
+        - 11110:11110
+        - 11111:11111
+        - 11112:11112
+        - 9100:9100
+      mem_limit: 4096m
+
+    canal-admin:
+      image: canal/canal-admin:v1.1.4
+      hostname: 192.168.1.12
+      network_mode: host
+      environment: 
+        - server.port=8089
+        - canal.adminUser=admin
+        - canal.adminPasswd=123456
+      volumes:
+        - ./admin-logs:/home/admin/canal-admin/logs
+      ports: 
+        - 8089:8089
+      mem_limit: 1024m

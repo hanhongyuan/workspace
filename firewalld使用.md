@@ -67,6 +67,13 @@ firewall-cmd --zone=public --add-port=8080/tcp --permanent
 firewall-cmd --zone=public --add-port=8010/tcp
 firewall-cmd --zone=public --add-port=8010/tcp --permanent
 
+firewall-cmd --zone=public --add-port=8020/tcp
+firewall-cmd --zone=public --add-port=8020/tcp --permanent
+
+firewall-cmd --zone=public --add-port=8030/tcp
+firewall-cmd --zone=public --add-port=8030/tcp --permanent
+
+
 firewall-cmd --zone=public --add-port=8210/tcp
 firewall-cmd --zone=public --add-port=8210/tcp --permanent
 

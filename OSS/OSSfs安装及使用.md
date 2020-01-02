@@ -59,7 +59,7 @@ ossfs sjfx-backup2008 /opt/ossfsbackup/ -ourl=oss-cn-beijing-internal.aliyuncs.c
 ossfs sjfx-backup2008 /opt/ossfsbackup/ -ourl=oss-cn-beijing.aliyuncs.com
 ossfs sjfx-elkback2018  /opt/sjfx-elkback2018/ -ourl=oss-cn-hangzhou-internal.aliyuncs.com -o allow_other
 ossfs sjfx-v3back /opt/v3backup/ -ourl=oss-cn-hangzhou-internal.aliyuncs.com -o allow_other
-
+ossfs sjfx-v3back /sjfx-website/v3back/ -ourl=oss-cn-hangzhou-internal.aliyuncs.com -o allow_other
 ossfs sjfx-v3back /opt/sjfx-v3back/ -ourl=oss-cn-hangzhou-internal.aliyuncs.com -o allow_other
 
 oss://sjfx-v3back/

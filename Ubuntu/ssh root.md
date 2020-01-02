@@ -2,15 +2,11 @@
 1. 使用root身份登陆ssh
 
 ```bash
-sudo apt-get update -y
-
-sudo apt-get install openssh-server -y
-
-sudo apt-get install vim -y
-
-sudo passwd root
-
-sudo vim /etc/ssh/sshd_config
+apt-get update -y 
+apt-get install openssh-server -y
+apt-get install vim -y
+passwd root
+vim /etc/ssh/sshd_config
 cat /etc/ssh/sshd_config
 
 cat >> /etc/ssh/sshd_config << EOF
@@ -20,7 +16,7 @@ ClientAliveCountMax 3
 
 EOF
 
-cat /etc/ssh/sshd_config
+vim /etc/ssh/sshd_config
 
 change
 `PermitRootLogin prohibit-password` 
@@ -70,32 +66,35 @@ sudo systemctl restart networking.service
 
 4. 安装好 docker
 
-    apt-get update -y
+apt-get update -y
 
-    apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    software-properties-common
+apt-get install \
+apt-transport-https \
+ca-certificates \
+curl \
+software-properties-common
 
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
-    sudo apt-key fingerprint 0EBFCD88
+sudo apt-key fingerprint 0EBFCD88
 
-    sudo add-apt-repository \
-   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
-   $(lsb_release -cs) \
-   stable"
+sudo add-apt-repository \
+"deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+$(lsb_release -cs) \
+stable"
 
-    apt-get update -y
+apt-get update -y
 
-    apt-cache madison docker-ce
+apt-cache madison docker-ce
 
-    apt-get install docker-ce=18.03.1~ce-0~ubuntu -y
+apt-get install docker-ce=18.03.1~ce-0~ubuntu -y
 
-    sudo systemctl start docker.service
-    sudo systemctl enable docker.service
-    cat > /etc/docker/daemon.json << EOF
+apt-get install docker-ce -y
+
+systemctl start docker.service
+systemctl enable docker.service
+
+cat > /etc/docker/daemon.json << EOF
 {
 "registry-mirrors": [
 "https://registry.docker-cn.com",
@@ -110,7 +109,7 @@ sudo systemctl restart networking.service
 "max-concurrent-downloads": 20
 }
 EOF
-sudo systemctl restart docker
+systemctl restart docker
 
 apt install python-pip -y
 pip install --upgrade pip

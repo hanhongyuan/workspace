@@ -27,7 +27,7 @@ EOF
 sudo ip addr flush ens33
 sudo systemctl restart networking.service
 
-echo 'sjfxpublish' > /etc/hostname
+echo 'sjfx-base' > /etc/hostname
 
 cat > /etc/network/interfaces << EOF
 # This file describes the network interfaces available on your system
@@ -42,11 +42,12 @@ iface lo inet loopback
 # The primary network interface
 auto ens33
 iface ens33 inet static
-address 192.168.1.18
+address 192.168.1.12
 netmask 255.255.255.0
 gateway 192.168.1.1
 dns-nameservers 192.168.1.1
 EOF
+
 sudo reboot
 
 sudo ip addr flush ens33
@@ -64,6 +65,12 @@ sudo apt-get update
 sudo apt-get install launchpad-getkeys
 
 apt-get install oracle-java8-installer -y
+
+
+add-apt-repository ppa:openjdk-r/ppa
+apt-get update -y
+apt-get install openjdk-8-jdk -y
+
 java -version
 
 3.1 maven
@@ -150,10 +157,10 @@ EOF
 
 4. 非root使用docker
 groupadd docker
-sudo gpasswd -a sjfx docker
-sudo gpasswd -a sjfxtest docker
-sudo gpasswd -a jenkins docker
-sudo service docker restart
+ gpasswd -a sjfx docker
+ gpasswd -a sjfxtest docker
+ gpasswd -a jenkins docker
+ service docker restart
 newgrp - docker 
 
 reboot
@@ -174,7 +181,7 @@ update mysql.user set authentication_string=password('7KY7HWZpgAtSAhU5') where u
 
 
 16.04版
-echo 'sjfx-dev-2' > /etc/hostname
+echo 'k8s1' > /etc/hostname
 cat > /etc/network/interfaces << EOF
 # This file describes the network interfaces available on your system
 # and how to activate them. For more information, see interfaces(5).
@@ -188,12 +195,14 @@ iface lo inet loopback
 # The primary network interface
 auto ens33
 iface ens33 inet static
-address 192.168.1.11
+address 192.168.1.31
 netmask 255.255.255.0
 gateway 192.168.1.1
 dns-nameservers 192.168.1.1
 EOF
 reboot
+
+
 sudo ip addr flush ens33
 sudo systemctl restart networking.service
 reboot

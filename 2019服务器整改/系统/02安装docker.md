@@ -4,13 +4,13 @@ apt-get update -y
     apt-transport-https \
     ca-certificates \
     curl \
-    software-properties-common
+    software-properties-common -y
 
-    curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+    curl -fsSL https://download.docker.com/linux/ubuntu/gpg |  apt-key add -
 
-    sudo apt-key fingerprint 0EBFCD88
+     apt-key fingerprint 0EBFCD88
 
-    sudo add-apt-repository \
+     add-apt-repository \
    "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
    $(lsb_release -cs) \
    stable"
@@ -21,8 +21,8 @@ apt-get update -y
 
     apt-get install docker-ce=18.06.3~ce~3-0~ubuntu -y
 
-    sudo systemctl start docker.service
-    sudo systemctl enable docker.service
+     systemctl start docker.service
+     systemctl enable docker.service
 cat > /etc/docker/daemon.json << EOF
 {
 "registry-mirrors": [
@@ -38,7 +38,7 @@ cat > /etc/docker/daemon.json << EOF
 }
 
 EOF
-sudo systemctl restart docker
+ systemctl restart docker
 
 apt install python-pip -y
 

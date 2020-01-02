@@ -1,0 +1,96 @@
+version: '2'
+
+services:
+
+  elasticsearch:
+    build:
+      context: elasticsearch/
+    volumes:
+      - ./elasticsearch/config/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+      - /elk/elasticsearchdata:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      ES_JAVA_OPTS: "-Xmx2g -Xms2g"
+      ELASTIC_PASSWORD: E7rHbFbWXxLWY9Bj
+    restart: unless-stopped
+    networks:
+      - elk
+
+  logstashmysql:
+    build:
+      context: logstash/
+    volumes:
+      - ./logstash/mysqlconfig/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+      - ./logstash/mysqlpipeline:/usr/share/logstash/pipeline:ro
+      - /etc/localtime:/etc/localtime
+      - ./logstashmysqldata:/usr/share/logstash/data
+      - ./logstashmysqllog:/usr/share/logstash/log
+      - ./logstashmysqltools/:/usr/share/logstash/conntools
+    environment:
+      LS_JAVA_OPTS: "-Xmx2g -Xms2g"
+    restart: unless-stopped
+
+  # logstashdocker:
+  #   build:
+  #     context: logstash/
+  #   volumes:
+  #     - ./logstash/dockerconfig/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+  #     - ./logstash/dockerpipeline:/usr/share/logstash/pipeline:ro
+  #     - /elk/logstashdockerdata:/usr/share/logstash/data
+  #     - /elk/logstashdockerlog:/usr/share/logstash/log
+  #   ports:
+  #     - "30002:30002"
+  #   environment:
+  #     LS_JAVA_OPTS: "-Xmx1g -Xms1g"
+  #   restart: unless-stopped
+  #   networks:
+  #     - elk
+  #   depends_on:
+  #     - elasticsearch
+
+  # logstashback:
+  #   build:
+  #     context: logstash/
+  #   volumes:
+  #     - ./logstash/backconfig/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+  #     - ./logstash/backpipeline:/usr/share/logstash/pipeline:ro
+  #     - /etc/localtime:/etc/localtime
+  #     - /elk/logstashbackdata:/usr/share/logstash/data
+  #     - /elk/logstashbacklog:/usr/share/logstash/log
+  #     - /sjfxlogs/:/sjfxlogs/
+  #   environment:
+  #     LS_JAVA_OPTS: "-Xmx512m -Xms512m"
+  #   restart: unless-stopped
+
+  # logstashgatewayjson:
+  #   build:
+  #     context: logstash/
+  #   volumes:
+  #     - ./logstash/gatewayjsonconfig/logstash.yml:/usr/share/logstash/config/logstash.yml:ro
+  #     - ./logstash/gatewayjsonpipeline:/usr/share/logstash/pipeline:ro
+  #     - /etc/localtime:/etc/localtime
+  #     - /elk/logstashgatewayjsondata:/usr/share/logstash/data
+  #     - /elk/logstashgatewayjsonlog:/usr/share/logstash/log
+  #     - /sjfxlogs/:/sjfxlogs/
+  #   environment:
+  #     LS_JAVA_OPTS: "-Xmx512m -Xms512m"
+  #   restart: unless-stopped
+    
+  kibana:
+    build:
+      context: kibana/
+    volumes:
+      - ./kibana/config/kibana.yml:/usr/share/kibana/config/kibana.yml:ro
+    ports:
+      - "5601:5601"
+    networks:
+      - elk
+    depends_on:
+      - elasticsearch
+
+networks:
+
+  elk:
+    driver: bridge
